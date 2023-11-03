@@ -1,11 +1,14 @@
 import React from 'react'
+import CustomCarousel from '../Components/Carousel'
 import Footer from '../Components/Footer'
-import { Navbar } from 'react-bootstrap'
+import CustomNavbar from '../Components/Navbar'
+
 
 export default function Home() {
   return (
     <div >
-      <Navbar />
+      <CustomNavbar />
+      <CustomCarousel />
       <Footer/>
     </div>
   )
