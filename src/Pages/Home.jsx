@@ -1,7 +1,12 @@
 import React from 'react'
+import Footer from '../Components/Footer'
+import { Navbar } from 'react-bootstrap'
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <div >
+      <Navbar />
+      <Footer/>
+    </div>
   )
 }
