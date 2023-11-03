@@ -1,3 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,4 +26,19 @@ code {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+.button{
+  background: white;
+}
+.button:hover{
+  background: transparent;
+}
+.pink-btn{
+  background: #cf2680;
+  color: white;
+}
+.pink-btn:hover{
+  background: white;
+  color: #cf2680;
+  border: 2px solid #cf2680;
 }

@@ -1,14 +1,19 @@
 import React from 'react'
 import CustomCarousel from '../Components/Carousel'
 import Footer from '../Components/Footer'
-import CustomNavbar from '../Components/Navbar'
+import Navbar from '../Components/Navbar'
+import { Link } from 'react-router-dom'
+import Ourservices from '../Components/Ourservices'
+import Video from '../Components/video'
 
 
 export default function Home() {
   return (
     <div >
-      <CustomNavbar />
+      <Navbar />
       <CustomCarousel />
+      <Ourservices />
+      <Video />
       <Footer/>
     </div>
   )
