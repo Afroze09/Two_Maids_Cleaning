@@ -51,35 +51,3 @@ export default function CustomCarousel() {
   );
 }
 
-{/* <div className="carousel-inner">
-    <div className="carousel-item active ">
-      <img src="https://res.cloudinary.com/twomaidsengi/image/upload/c_fill,g_south,h_900,q_auto:eco,w_1920/v1696521709/hubsite-reskin/slider-image-1.webp" className="d-block w-100" alt="First Slide" />
-    </div>
-    <div className="carousel-item  ">
-      <img src="https://res.cloudinary.com/twomaidsengi/image/upload/c_fill,g_south,h_900,q_auto:eco,w_1920/v1696521709/hubsite-reskin/slider-image-2.webp" className="d-block w-100" alt="Second Slide" />
-    </div>
-    <div className="carousel-item  ">
-      <img src="https://res.cloudinary.com/twomaidsengi/image/upload/c_fill,g_north,h_900,q_auto,w_1920/v1670256610/hubsite-reskin/TwoMaids_9.webp" className="d-block w-100" alt="Third Slide" />
-    </div>
-    <div className="carousel-item  ">
-      
-    </div>
-    <div className="carousel-item  ">
-      
-    </div>
-    <div className="carousel-item  ">
-     
-    </div>
-    <div className="carousel-item  ">
-      
-    </div>
-    <div className="carousel-item  ">
-      
-    </div>
-    <div className="carousel-item  ">
-      
-    </div>
-    <div className="carousel-item  ">
-      
-    </div>
-  </div> */}
