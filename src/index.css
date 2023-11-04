@@ -47,3 +47,19 @@ code {
 .text-pink{
         color: #cf2680;
 }
+.event-btn{
+        font-weight: 800;
+        height: 60px;
+        width: 300px;
+        font-size: 20px !important;
+        background: white !important;
+        color: #cf2680 !important;
+        border: 2px white solid !important;
+}
+.event-btn:hover{
+        background: #cf2680 !important;
+        color: white !important;
+}
+.dropdown-item:active, .active{
+        background: #cf2680 !important;
+}

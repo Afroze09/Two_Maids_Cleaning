@@ -1,7 +1,8 @@
-import React from 'react'
-
-export default function EventButton() {
+export default function EventButton({className}) {
   return (
-    <div>EventButton</div>
+    <div className={` flex justify-center ${className}`}>
+        <button className='btn event-btn'>Book Your Cleaning</button>
+        <button className='btn event-btn'>Calculate Your Price</button>
+    </div>
   )
 }

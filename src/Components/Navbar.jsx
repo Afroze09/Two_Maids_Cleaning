@@ -2,12 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Button } from "react-bootstrap";
+
 export default function Navbar() {
   return (
     <section className="px-4">
       <nav className=" h-[40px] flex items-center px-4">
         <div className="font-semibold w-full h-[20px] text-gray-600 flex items-center justify-between">
-          <div className="text-md flex items-center gap-x-2">
+          <div className="text-md flex items-center gap-x-2 mt-3">
             <span>Your store </span>
             <Link className="text-[#cf2680] font-bold no-underline">
               CHESTERFIELD
@@ -20,11 +21,7 @@ export default function Navbar() {
                 (636) 600-4480
               </Link>
             </span>
-            <Link className="no-underline">
-              <button className="btn pink-btn">
-                BOOK YOUR CLEANING
-              </button>
-            </Link>
+            <button className="btn pink-btn">BOOK YOUR CLEANING</button>
           </div>
         </div>
       </nav>
@@ -38,11 +35,11 @@ export default function Navbar() {
           />
         </Link>
         <ul className="flex items-center -mb-3 gap-x-5 h-full">
-            <Button variant="white" >Services</Button>
-            <Button variant="white" >Locations</Button>
-            <Button variant="white" >Why Hire Us</Button>
-            <Button variant="white" >Franchise Opportunities</Button>
-          <Dropdown >
+          <Button variant="white">Services</Button>
+          <Button variant="white">Locations</Button>
+          <Button variant="white">Why Hire Us</Button>
+          <Button variant="white">Franchise Opportunities</Button>
+          <Dropdown>
             <Dropdown.Toggle
               id="dropdown-button-dark-example1"
               variant="white"
@@ -50,13 +47,15 @@ export default function Navbar() {
             >
               More
             </Dropdown.Toggle>
-
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1" active>About</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Careers</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Blog</Dropdown.Item>
-              <Dropdown.Item href="#/action-4">Reviews</Dropdown.Item>
-              <Dropdown.Item href="#/action-4">Contact Us</Dropdown.Item>
+              <Link aria-selected="true" data-rr-ui-dropdown-item className="dropdown-item active" href="#/action-1" active>
+                About
+              </Link>
+              <Link aria-selected="true" data-rr-ui-dropdown-item className="dropdown-item" href="#/action-1" >Careers</Link>
+              <Link aria-selected="true" data-rr-ui-dropdown-item className="dropdown-item" href="#/action-1" >Blog</Link>
+              <Link aria-selected="true" data-rr-ui-dropdown-item className="dropdown-item" href="#/action-1" >Reviews</Link>
+              <Link aria-selected="true" data-rr-ui-dropdown-item className="dropdown-item" href="#/action-1" >Contact Us</Link>
+
             </Dropdown.Menu>
           </Dropdown>
         </ul>

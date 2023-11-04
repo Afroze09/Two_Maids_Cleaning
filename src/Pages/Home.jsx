@@ -10,7 +10,6 @@ export default function Home() {
       <CustomCarousel />
       <Ourservices />
       <Video />
-      <Footer/>
     </>
   )
 }
