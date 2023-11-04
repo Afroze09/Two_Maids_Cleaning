@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import Services from "../Pages/Services";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const options = ["About", "Careers", "Blog",'Reviews','Contact Us'];
@@ -24,15 +24,15 @@ export default function Navbar() {
               CHESTERFIELD
             </Link>
           </div>
-          <div className="h-[20px] text-[12px]">
+          <div className=" text-[12px]">
             <span className="mr-2">
               Call for a Free Estimate!{" "}
               <Link className="text-[#cf2680] font-bold no-underline mr-2">
                 (636) 600-4480
               </Link>
             </span>
-            <Link className="no-underline">
-              <button className=" pink-btn font-extrabold p-1">
+            <Link className=" no-underline">
+              <button className="h-8 w-40 pink-btn p-1">
                 BOOK YOUR CLEANING
               </button>
             </Link>
@@ -48,7 +48,7 @@ export default function Navbar() {
             className="h-12 -mt-4"
           />
           <ul className="flex items-center text-sm font-bold -mb-3 h-full">
-            <Link className="no-underline text-[#75757a]"><li className="mr-5">Services</li></Link>
+            <Link className="no-underline text-[#75757a]" to="./services"><li className="mr-5">Services</li></Link>
             <Link className="no-underline text-[#75757a]"><li className="mr-5">Locations</li></Link>
             <Link className="no-underline text-[#75757a]"><li className="mr-5">Why Hire Us</li></Link>
             <Link className="no-underline text-[#75757a]"><li className="mr-5">Franchise Opportunities</li></Link>

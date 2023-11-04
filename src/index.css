@@ -33,12 +33,13 @@ code {
 .button:hover{
   background: transparent;
 }
-.pink-btn{
-  background: #cf2680;
+.pink-btn {
+  background: #cf2680; /* Set initial background color */
   color: white;
-}
-.pink-btn:hover{
-  background: white;
-  color: #cf2680;
   border: 2px solid #cf2680;
+}
+
+.pink-btn:hover {
+  background: white; /* Change background color on hover */
+  color: #cf2680;
 }
