@@ -8,7 +8,7 @@ export default function Video() {
         controls
         preload="metadata"
         poster="https://res.cloudinary.com/twomaidsengi/image/upload/f_auto/v1614356825/next-site/pay.jpg"
-        className=" mb-5"
+        className="h-96 mx-auto mb-5"
       >
         <source
           src="https://res.cloudinary.com/twomaidsengi/video/upload/q_auto/v1601655744/next-site/pay-for-performance-h265.mp4"
