@@ -39,11 +39,7 @@ code {
   border: 2px #cf2680 solid !important;
 }
 .pink-btn:hover{
-  background: white !important;
-  color: #cf2680 !important;
-
-}
-
-.text-pink{
-        color: #cf2680;
+  background: white;
+  color: #cf2680;
+  border: 2px solid #cf2680;
 }
