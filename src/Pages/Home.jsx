@@ -5,6 +5,7 @@ import Navbar from '../Components/Navbar'
 import { Link } from 'react-router-dom'
 import Ourservices from '../Components/Ourservices'
 import Video from '../Components/video'
+import Reviews from '../Components/Reviews'
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <CustomCarousel />
       <Ourservices />
       <Video />
+      <Reviews />
       <Footer/>
     </div>
   )
