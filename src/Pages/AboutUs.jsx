@@ -1,5 +1,5 @@
 import React from "react";
-
+import { aboutUs } from "../utils";
 const AboutUs = () => {
   return (
     <section className="bg-transparent py-5">
@@ -11,25 +11,10 @@ const AboutUs = () => {
           <h5 className="text-[#cf2680] mb-10 text-xl">
             Two Maids prioritizes customer service and quality
           </h5>
-          <p className=" mb-4 leading-6 font-normal text-base">
-            Our Pay for Performance program is what sets us apart from our
-            competition and allows our customers to rank their maid service on a
-            scale from 1-10. This ranking directly determines what our house
-            cleaners earn on each job, making sure that you get a Level 10 clean
-            each and every time.
-          </p>
-          <p className=" mb-4 leading-6 font-normal text-base">
-            Our company also supports the “Cleaning for a Reason” organization.
-            Through this relationship, we offer free house cleanings to women
-            undergoing cancer treatment. Our family has known cancer first-hand
-            and how the support and kindness of others can be a blessing.
-          </p>
-          <p className=" mb-4 leading-6 font-normal text-base">
-            Our company also supports the “Cleaning for a Reason” organization.
-            Through this relationship, we offer free house cleanings to women
-            undergoing cancer treatment. Our family has known cancer first-hand
-            and how the support and kindness of others can be a blessing.
-          </p>
+          {
+                aboutUs.map(v=><p className=" mb-4 leading-6 font-normal text-base"> {v} </p> )
+          }
+          
           <h5 className="text-[#cf2680] mb-10 text-xl">
             Our Chesterfield Team
           </h5>

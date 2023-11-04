@@ -2,15 +2,21 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import AboutUs from './Pages/AboutUs';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/aboutUs' element={<AboutUs />} />
-      </Routes>
-    </BrowserRouter>
-  );
+        return (
+                <div className='h-screen w-screen'>
+                        <BrowserRouter>
+                                <Navbar />
+                                <Routes>
+                                        <Route path='/' element={<Home />}></Route>
+                                        <Route path='/aboutUs' element={<AboutUs />} />
+                                </Routes>
+                                <Footer/>
+                        </BrowserRouter>
+                </div>
+        );
 }
 
 export default App;
