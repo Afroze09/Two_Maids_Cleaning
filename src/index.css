@@ -38,8 +38,7 @@ code {
   color: white;
   border: 2px solid #cf2680;
 }
-
-.pink-btn:hover {
-  background: white; /* Change background color on hover */
+.pink-btn:hover{
+  background: white;
   color: #cf2680;
 }

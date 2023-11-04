@@ -51,8 +51,8 @@ export default function CustomCarousel() {
     <div className='h-full w-full absolute top-0 flex flex-col justify-around tracking-widest text-center items-center'>
         <img src="https://res.cloudinary.com/twomaidsengi/image/upload/c_scale,q_auto,w_842/v1670341959/hubsite-reskin/let-life-shine-hero.webp" alt="" />
         <div className='flex items-center justify-center font-sans'>
-          <Link className='button font-bold mr-10 text-[#cf2680] p-3 hover:text-white hover:border-2' ><button >BOOK YOUR CLEANING</button></Link>
-          <Link><button className='button font-bold mr-10 text-[#cf2680] hover:text-white hover:border-2 p-3 ' >CALCULATE YOUR PRICE</button></Link>
+          <Link className='button font-bold mr-10 text-[#cf2680] p-3 hover:text-white border-2' ><button >BOOK YOUR CLEANING</button></Link>
+          <Link><button className='button font-bold mr-10 text-[#cf2680] hover:text-white border-2 p-3 ' >CALCULATE YOUR PRICE</button></Link>
         </div>
       </div>
     </div>
