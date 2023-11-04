@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import AboutUs from './Pages/AboutUs';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+import Book from './Pages/Book';
 const App = () => {
         return (
                 <div className='h-screen w-screen'>
@@ -12,6 +13,7 @@ const App = () => {
                                 <Routes>
                                         <Route path='/' element={<Home />}></Route>
                                         <Route path='/aboutUs' element={<AboutUs />} />
+                                        <Route path='/book' element={<Book/>} />
                                 </Routes>
                                 <Footer/>
                         </BrowserRouter>

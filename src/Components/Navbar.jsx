@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 
 export default function Navbar() {
   return (
-    <section className="px-4">
+    <section className="px-8">
       <nav className=" h-[40px] flex items-center px-4">
         <div className="font-semibold w-full h-[20px] text-gray-600 flex items-center justify-between">
           <div className="text-md flex items-center gap-x-2 mt-3">

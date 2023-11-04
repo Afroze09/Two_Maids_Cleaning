@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { services } from '../services';
+import { services } from '../utils';
 import { Link } from 'react-router-dom';
 export default function Ourservices() {
   const rotatingWords = ["better", "brighter", "sunnier", "more delightful", "more fulfilling"];
