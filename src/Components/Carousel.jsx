@@ -15,7 +15,7 @@ const corouselImg = [
 ]
 export default function CustomCarousel() {
   return (
-    <div className='relative w-full'> <Carousel controls={false} indicators={false} className='h-[90vh]'>
+    <div className='relative w-full'>g <Carousel controls={false} indicators={false} className='h-[90vh]'>
        <Carousel.Item interval={2000}>
         <img
           className="d-block h-[90vh] w-100"
