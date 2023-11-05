@@ -1,16 +1,11 @@
 import React from "react";
-import { Footer } from "flowbite-react";
 import {
-  BsDribbble,
   BsFacebook,
-  BsGithub,
-  BsInstagram,
-  BsTwitter,
   BsGoogle,
 } from "react-icons/bs";
 import EventButton from "./EventButton";
 import { Link } from "react-router-dom";
-import { FooterDivider } from "flowbite-react/lib/esm/components/Footer/FooterDivider";
+
 export default function CustomFooter() {
   return (
     <footer className="">
