@@ -25,7 +25,9 @@ export default function CustomFooter() {
           className="h-10 "
         />
       </div>
-      <div className="bg-[#cf2680] footer text-white h-[85vh] w-full py-2  px-[100px]">
+      <div className="bg-[#cf2680] overflow-hidden relative footer text-white h-[85vh] w-full py-2  px-[100px]">
+        <div className="footer-circle"></div>
+        <div className="footer-circle-two"></div>
         <div className="flex justify-between items-center h-[150px] py-[60px]">
           <EventButton className={`gap-x-4`} />
           <div className="h-full text-md">

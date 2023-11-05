@@ -22,7 +22,7 @@ export default function Video() {
         </div>
       
       <div className='grid grid-cols-1 text-center mb-4' >
-        <Link className='no-underline'><button className=' pink-btn font-extrabold mr-10 p-2' >LEARN ABOUT PAY FOR PERFORMANCE</button></Link>
+        <Link className='no-underline'><button className=' pink-btn font-extrabold p-2' >LEARN ABOUT PAY FOR PERFORMANCE</button></Link>
         </div>
     </section>
   );

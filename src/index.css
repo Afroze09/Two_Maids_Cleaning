@@ -85,3 +85,26 @@ code {
   background-image: url(./Images/star.png) !important;
   background-size: 10px !important;
 }
+
+.footer-circle{
+  position: absolute;
+  background-color: #f9ddeb;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  top: -200px;
+  right: 125px;
+  opacity: 0.25;
+  z-index: 0;
+}
+.footer-circle-two{
+  position: absolute;
+  background-color: #f9ddeb;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  bottom: -50%;
+  right: 125px;
+  opacity: 0.25;
+  z-index: 0;
+}
