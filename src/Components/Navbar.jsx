@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 
 export default function Navbar() {
   return (
-    <section className="px-4">
+    <section className="px-4" id='navbar'>
       <nav className=" h-[40px] flex items-center px-4">
         <div className="font-semibold w-full h-[20px] text-gray-600 flex items-center justify-between">
           <div className="text-md flex items-center gap-x-2 mt-3">
@@ -48,7 +48,7 @@ export default function Navbar() {
               More
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Link aria-selected="true" data-rr-ui-dropdown-item className="dropdown-item active" href="#/action-1" active>
+              <Link aria-selected="true" data-rr-ui-dropdown-item className="dropdown-item dropdown-active" href="#/action-1" active to={'/aboutus'}>
                 About
               </Link>
               <Link aria-selected="true" data-rr-ui-dropdown-item className="dropdown-item" href="#/action-1" >Careers</Link>

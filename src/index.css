@@ -60,6 +60,28 @@ code {
         background: #cf2680 !important;
         color: white !important;
 }
-.dropdown-item:active, .active{
+.dropdown-item:active, .dropdown-active{
         background: #cf2680 !important;
+}
+.carousel-control-prev{
+  margin-left: -30px !important;
+  color: #cf2680 !important;
+}
+
+.carousel-control-prev-icon{
+  background-image: url('./Images/angle-circle-left.png') !important;
+  background-size: 25px !important;
+}
+.carousel-control-next-icon{
+  background-size: 25px !important;
+  background-image: url('./Images/angle-circle-right.png') !important; 
+}
+
+.carousel-control-next{
+  margin-right: -30px !important;
+}
+
+.star{
+  background-image: url(./Images/star.png) !important;
+  background-size: 10px !important;
 }

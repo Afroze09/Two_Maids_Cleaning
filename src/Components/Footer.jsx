@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function CustomFooter() {
   return (
-    <footer className="">
+    <footer >
       <div
         className="bg-[#f9ddeb] h-[30vh] w-full flex items-center justify-center "
         style={{
@@ -25,7 +25,7 @@ export default function CustomFooter() {
           className="h-10 "
         />
       </div>
-      <div className="bg-[#cf2680]  text-white h-[85vh] w-full py-2  px-[100px]">
+      <div className="bg-[#cf2680] footer text-white h-[85vh] w-full py-2  px-[100px]">
         <div className="flex justify-between items-center h-[150px] py-[60px]">
           <EventButton className={`gap-x-4`} />
           <div className="h-full text-md">
