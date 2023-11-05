@@ -108,3 +108,25 @@ code {
   opacity: 0.25;
   z-index: 0;
 }
+.bg-dots{
+  position: absolute;
+  background-image: url('https://res.cloudinary.com/twomaidsengi/image/upload/c_scale,q_auto,w_1920/v1670256573/hubsite-reskin/opaque-dots.webp');
+  background-size: cover;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: -1;
+  background-position: bottom;
+  width: 100%;
+  height: 80vh;
+  transform: rotate(180deg);
+}
+
+.photo-circle{
+  height: 400px;
+  width: 400px;
+  background-image: url('https://res.cloudinary.com/twomaidsengi/image/upload/w_auto,f_auto,q_100/v1634155818/o9ocoaglepigwhds6kmk.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
