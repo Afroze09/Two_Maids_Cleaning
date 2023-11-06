@@ -1,12 +1,8 @@
-import React from "react";
-import {
-  BsFacebook,
-  BsGoogle,
-} from "react-icons/bs";
-import EventButton from "./EventButton";
 import { Link } from "react-router-dom";
+import EventButton from "./EventButton";
 
 export default function CustomFooter() {
+        
   return (
     <footer >
       <div
@@ -78,8 +74,7 @@ export default function CustomFooter() {
             <Link className="text-white no-underline ">
               <ul className="p-0">
                 <li className="flex items-center justify-start">
-                  <BsFacebook className="mr-5" />
-                  <BsGoogle />
+
                 </li>
               </ul>
             </Link>
@@ -89,3 +84,5 @@ export default function CustomFooter() {
     </footer>
   );
 }
+                //   <BsFacebook className="mr-5" />
+                //   <BsGoogle />

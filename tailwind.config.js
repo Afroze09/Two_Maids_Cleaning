@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+        textColor: {
+                pink: '#cf2680'
+        },
       keyframes: {
         slide:{
           '0%,100%' : {opacity:0},
