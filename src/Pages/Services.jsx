@@ -11,7 +11,7 @@ const Services = () => {
       
     return (
         <>
-            <Navbar/> 
+            
             <div className='h-full w-full'>
             <div className='main-info h-[100vh] w-full p-3' style={{backgroundImage:'url("https://twomaidscleaning.com/_next/image/?url=https%3A%2F%2Fres.cloudinary.com%2Ftwomaidsengi%2Fimage%2Fupload%2Fc_scale%2Cq_44%2Cw_2515%2Fv1670256609%2Fhubsite-reskin%2FTwoMaids_3.jpg&w=3840&q=75")',backgroundPosition:'center',backgroundSize:'cover'}}>
                 <div className='ml-20 mt-40 w-[520px]'>
@@ -46,7 +46,7 @@ const Services = () => {
             </div>
             </div>
             </div>
-            <Footer/>
+          
         </>
     );
 }
