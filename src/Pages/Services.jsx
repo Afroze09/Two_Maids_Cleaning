@@ -1,8 +1,11 @@
-
-import React,{useState} from 'react';
-import Navbar from '../Components/Navbar';
-import { Footer } from 'flowbite-react';
-
+import React, { useState } from "react";
+import Navbar from "../Components/Navbar";
+import { Footer } from "flowbite-react";
+import { data, title } from "../data";
+import OneTime from "../Components/OneTime";
+import { Collapse } from "react-bootstrap";
+import Rooms from "../Components/Rooms";
+import { serviceinfo} from "../data"
 const Services = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggleDropdown = () => {
@@ -11,7 +14,7 @@ const Services = () => {
       
     return (
         <>
-            
+            <Navbar/> 
             <div className='h-full w-full'>
             <div className='main-info h-[100vh] w-full p-3' style={{backgroundImage:'url("https://twomaidscleaning.com/_next/image/?url=https%3A%2F%2Fres.cloudinary.com%2Ftwomaidsengi%2Fimage%2Fupload%2Fc_scale%2Cq_44%2Cw_2515%2Fv1670256609%2Fhubsite-reskin%2FTwoMaids_3.jpg&w=3840&q=75")',backgroundPosition:'center',backgroundSize:'cover'}}>
                 <div className='ml-20 mt-40 w-[520px]'>
@@ -27,28 +30,24 @@ const Services = () => {
                 {/* <img className='h-[100%] w-full' src= alt="" /> */}
                 
             </div>
-
-            {/* *** Drawer*** */}
-            <div className='h-20 w-full text-pink-600 text-2xl font-semibold'>
-            <div className='one-time-clean-drawer flex items-center justify-center h-full bg-pink-200 aria-expanded="true"'>
-                <p>One-Time-clean</p>
-                <i onMouseEnter={() => toggleDropdown(true)}
-              onMouseLeave={()=>toggleDropdown(false)} className="fi fi-rs-angle-circle-down ml-6 -mb-1 cursor-pointer"></i>
+            <div className="flex justify-evenly mt-16 -ml-5">
+              <button className="h-10 w-48 text-white font-bold justify-evenly bg-pink-600">
+                ONE-TIME-CLEAN
+              </button>
+              <button className="h-10 w-48 text-white font-bold justify-evenly bg-pink-600">
+                RECURRING CLEAN
+              </button>
             </div>
-            <div  className=" " aria-hidden="true"><section  className="bg-transparent py-5 "><div  className="container"><div  className="justify-content-center row"><div  className="col-lg-12 col-md-12 col-12"><div  className="justify-content-between row"><div  className="col-md-12 col-12"><div  className="package-selection-container"><span  className="service-package-active">DEEP CLEANING</span><span  className="">DESIGN WITH TIME</span><span  className="">MOVE IN/OUT</span></div><div  className="services-package-description"><p>Our Deep Cleaning Package is the most thorough cleaning service. The most significant difference between the Deep Cleaning Package and our other cleaning packages is the amount of time and detail we spend cleaning what we refer to as your vertical surfaces. Vertical surfaces include baseboards, trim work, interior windows, blinds, exterior cabinets/drawers, light fixtures, and doors.</p><div  className="service-circle-one"></div><div  className="service-circle-two"></div></div><div  className="services__accordion accordion"><div   className="accordion__card card"><div  className="card-header"><div  className="flex-nowrap row"><div  className="col-md-9 col-10"><h2  className="h4 font-weight-normal" >Kitchen</h2></div><div  className="relative col-auto ml-auto mr-2 services-accordion-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus-circle"  className="svg-inline--fa fa-plus-circle fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#D4357F"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg></div></div></div><div  className="collapse"  ><div  className="services__answer py-4"><div  className="text-columns-3"><ul  className="services__room-list"><li>Inside/Outside of Microwave &amp; Oven</li><li>Glass Surfaces</li><li>Empty Trash</li><li>Backsplash</li><li>Exterior of Trash Can</li><li>Sweep Floors</li><li>Outside Of Stove Hood</li><li>Light Fixtures</li><li>Mop Floors</li><li>Counter Tops</li><li>Ceiling Fans</li><li>Baseboards</li><li>Sink and Chrome</li><li>Cobwebs</li><li>Windows, Window Sills &amp; Blinds</li><li>Mirrors</li><li>Ledges</li><li>Door &amp; Door Frames</li><li>Outside of Cabinets &amp; Drawers</li><li>Pantry Floor &amp; Door</li><li>Top of Refrigerator</li><li>Baker’s Rack &amp; Shelves</li><li>Shelves</li><li>Tables and Chairs</li><li>Outside of Appliances</li><li>Wash One Sinkload Of Dishes</li></ul></div></div></div></div><div   className="accordion__card card"><div  className="card-header"><div  className="flex-nowrap row"><div  className="col-md-9 col-10"><h2  className="h4 font-weight-normal" >Bathrooms</h2></div><div  className="relative col-auto ml-auto mr-2 services-accordion-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus-circle"  className="svg-inline--fa fa-plus-circle fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#D4357F"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg></div></div></div><div  className="collapse"><div  className="services__answer py-4"><div  className="text-columns-3"><ul  className="services__room-list"><li>Shower</li><li>Polish Faucets</li><li>Furniture</li><li>Tub </li><li>Mirrors</li><li>Empty Trash</li><li>Toilet</li><li>Glass Surfaces</li><li>Sweep Floors</li><li>Counters</li><li>Shelves</li><li>Mop Floors</li><li>Sink</li><li>Light Fixtures</li><li>Cobwebs</li><li>Metal &amp; Glassware</li><li>Air Vents</li><li>Ledges</li><li>Windows, Windows Sills &amp; Blinds</li><li>Door &amp; Door Frames</li><li>Outside of Cabinets &amp; Drawers</li><li>Vacuum Rugs</li><li>Baseboards</li></ul></div></div></div></div><div   className="accordion__card card"><div  className="card-header"><div  className="flex-nowrap row"><div  className="col-md-9 col-10"><h2  className="h4 font-weight-normal" >Bedrooms</h2></div><div  className="relative col-auto ml-auto mr-2 services-accordion-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus-circle"  className="svg-inline--fa fa-plus-circle fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#D4357F"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg></div></div></div><div  className="collapse"><div  className="services__answer py-4"><div  className="text-columns-3"><ul  className="services__room-list"><li>Change Bed Linens</li><li>Window, Window Sills &amp; Blinds</li><li>Sweep Floors</li><li>Make Beds</li><li>Ceiling Fans</li><li>Mirrors</li><li>Shelves</li><li>Cobwebs</li><li>Empty Trash</li><li>Ledges</li><li>Light Fixtures</li><li>Mop Floors</li><li>Baseboards</li><li>Thorough Dusting of Furniture </li><li>Vacuum Floors &amp; Rugs</li><li>Doors and Door Frames</li><li>Outside of Cabinets &amp; Drawers</li></ul></div></div></div></div><div   className="accordion__card card"><div  className="card-header"><div  className="flex-nowrap row"><div  className="col-md-9 col-10"><h2  className="h4 font-weight-normal" >Laundry Room</h2></div><div  className="relative col-auto ml-auto mr-2 services-accordion-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus-circle"  className="svg-inline--fa fa-plus-circle fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#D4357F"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg></div></div></div><div  className="collapse"><div  className="services__answer py-4"><div  className="text-columns-3"><ul  className="services__room-list"><li>Outside of Appliances</li><li>Glass Surfaces</li><li>Empty Trash </li><li>Sinks</li><li>Light Fixtures</li><li>Sweep Floors</li><li>Counters</li><li>Furniture </li><li>Mop Floors</li><li>Mirrors</li><li>Shelves</li><li>Vacuum Rugs</li><li>Baseboards</li><li>Air Vents</li><li>Cobwebs</li><li>Ledges</li><li>Doors &amp; Door Frames</li><li>Windows, Window Sills &amp; Blinds</li></ul></div></div></div></div><div   className="accordion__card card"><div  className="card-header"><div  className="flex-nowrap row"><div  className="col-md-9 col-10"><h2  className="h4 font-weight-normal" >Dining Room</h2></div><div  className="relative col-auto ml-auto mr-2 services-accordion-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus-circle"  className="svg-inline--fa fa-plus-circle fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#D4357F"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg></div></div></div><div  className="collapse"><div  className="services__answer py-4"><div  className="text-columns-3"><ul  className="services__room-list"><li>Glass Surfaces</li><li>Empty Trash </li><li>Light Fixtures</li><li>Thorough Dusting of Furniture </li><li>Mop Floors</li><li>Mirrors</li><li>Shelves</li><li>Vacuum Rugs</li><li>Ceiling Fans</li><li>Cobwebs</li><li>Sweep Floors</li><li>Doors &amp; Door Frames</li><li>Windows, Window Sills &amp; Blinds</li><li>Ledges</li><li>Baseboards</li></ul></div></div></div></div><div   className="accordion__card card"><div  className="card-header"><div  className="flex-nowrap row"><div  className="col-md-9 col-10"><h2  className="h4 font-weight-normal">Living Room</h2></div><div  className="relative col-auto ml-auto mr-2 services-accordion-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus-circle"  className="svg-inline--fa fa-plus-circle fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#D4357F"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg></div></div></div><div  className="collapse"><div  className="services__answer py-4"><div  className="text-columns-3"><ul  className="services__room-list"><li>Glass Surfaces</li><li>Empty Trash </li><li>Light Fixtures</li><li>Thorough Dusting of Furniture </li><li>Mop Floors</li><li>Mirrors</li><li>Shelves</li><li>Vacuum Rugs</li><li>Ceiling Fans</li><li>Cobwebs</li><li>Sweep Floors</li><li>Doors &amp; Door Frames</li><li>Windows, Window Sills &amp; Blinds</li><li>Ledges</li><li>Baseboards</li></ul></div></div></div></div><div   className="accordion__card card"><div  className="card-header"><div  className="flex-nowrap row"><div  className="col-md-9 col-10"><h2  className="h4 font-weight-normal" >Office</h2></div><div  className="relative col-auto ml-auto mr-2 services-accordion-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus-circle"  className="svg-inline--fa fa-plus-circle fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#D4357F"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg></div></div></div><div  className="collapse"><div  className="services__answer py-4"><div  className="text-columns-3"><ul  className="services__room-list"><li>Glass Surfaces</li><li>Empty Trash </li><li>Light Fixtures</li><li>Thorough Dusting of Furniture </li><li>Mop Floors</li><li>Mirrors</li><li>Shelves</li><li>Vacuum Rugs</li><li>Ceiling Fans</li><li>Cobwebs</li><li>Sweep Floors</li><li>Doors &amp; Door Frames</li><li>Windows, Window Sills &amp; Blinds</li><li>Ledges</li><li>Baseboards</li></ul></div></div></div></div></div></div></div></div></div></div></section></div>
-            <div className='recurring-clean-drawer flex items-center justify-center h-full bg-gray-300'>
-                <p>Recurring clean</p>
-                <i  className="fi fi-rs-angle-circle-down ml-6 -mb-1 cursor-pointer"></i>
-            </div>
-            <div className='common-question-drawer flex items-center justify-center h-full bg-gray-100'>
-                <p>Common Question</p>
-                <i  className="fi fi-rs-angle-circle-down ml-6 -mb-1 cursor-pointer"></i>
-            </div>
-            </div>
-            </div>
-          
-        </>
-    );
-}
-
+          </div>
+        </div>
+      </div>
+      <div className=" w-full">
+        <OneTime />
+      </div>
+      <div className=" w-full">
+        
+      </div>
+    </>
+  );
+};
 export default Services;

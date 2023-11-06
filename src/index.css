@@ -141,4 +141,22 @@ input[type="radio"]:checked,input[type="radio"]:active{
 
 [data-container="side-panel"]{
         display: none !important;
+}.down{
+  background-color: transparent !important;
+  border: none !important;
+  outline: none!important;
+}
+.down:active{
+  background-color: transparent !important;
+  border: none !important;
+  outline: none!important;
+}
+
+.collapse{
+  visibility: visible !important;
+}
+.using{
+  color: #cf2680; 
+  text-decoration: underline;
+  line-height: 27px;
 }
