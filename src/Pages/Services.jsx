@@ -35,14 +35,14 @@ const Services = () => {
           </div>
           {/* <img className='h-[100%] w-full' src= alt="" /> */}
         </div>
-        <div className="flex justify-evenly mt-16 -ml-5">
+        {/* <div className="flex justify-evenly mt-16 -ml-5">
           <button className="h-10 w-48 text-white font-bold justify-evenly bg-pink-600">
             ONE-TIME-CLEAN
           </button>
           <button className="h-10 w-48 text-white font-bold justify-evenly bg-pink-600">
             RECURRING CLEAN
           </button>
-        </div>
+        </div> */}
       </div>
       <div className=" w-full">
         <OneTime />
