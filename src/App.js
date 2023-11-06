@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
 import Navbar from "./Components/Navbar";
 import CustomFooter from "./Components/Footer";
-import Modal from "./Components/Modal";
 import Book from "./Pages/Book";
 const App = () => {
   return (

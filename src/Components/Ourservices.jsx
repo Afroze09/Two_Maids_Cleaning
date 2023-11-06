@@ -13,7 +13,7 @@ export default function Ourservices() {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  });
 
   return (
     <div className='py-12 px-[250px]'>

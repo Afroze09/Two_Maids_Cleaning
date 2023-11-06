@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import { ButtonGroup } from "react-bootstrap";
 import { handleScroll, optionSel } from "../utils";
+import { Link } from "react-router-dom";
 const ProgressCheck = ({ step,setStep }) => {
   return (
     <div className="flex justify-between text-xl relative">
@@ -110,9 +111,7 @@ export default function Book() {
               calls, text messages, or emails at the contact information
               provided. Message rates may apply. Text STOP to opt out at any
               time.
-              <a href="" className="text-dark">
-                Terms and Conditions apply.
-              </a>
+              <Link className="text-dark"> Terms and Conditions apply.</Link>
             </p>
             <hr />
             <h4 className="mt-4">Tell Us About the Job</h4>
