@@ -8,4 +8,6 @@
     ** Let Life Shine Logo **
     https://res.cloudinary.com/twomaidsengi/image/upload/c_scale,f_auto,q_auto,w_2000/v1670273202/hubsite-reskin/let-life-shine-pink.webp
 
+    *** Footer Logo  ***
+    https://res.cloudinary.com/twomaidsengi/image/upload/c_scale,q_auto,w_314/v1670257150/hubsite-reskin/two-maids-logo-white.webp
     

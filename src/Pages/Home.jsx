@@ -1,12 +1,13 @@
 import React from 'react'
-import Footer from '../Components/Footer'
-import { Navbar } from 'react-bootstrap'
+import Navbar from '../Components/Navbar'
+import Component from '../Components/Footer'
+
 
 export default function Home() {
   return (
-    <div >
+    <div className='home-body'>
       <Navbar />
-      <Footer/>
+      <Component/>
     </div>
   )
 }
