@@ -40,7 +40,7 @@ export default function Ourservices() {
             }
         </div>
         <div className='grid grid-cols-1 text-center mb-5' >
-        <Link className='no-underline'><button className=' pink-btn font-extrabold mr-10 p-2 w-64' >VIEW OUR SERVICES</button></Link>
+        <Link className='no-underline'><button className=' pink-btn font-extrabold  p-2 w-64' >VIEW OUR SERVICES</button></Link>
         </div>
       </div>
     </div>

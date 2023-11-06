@@ -137,7 +137,9 @@ export default function Book() {
         </InputGroup>
         <h4>What Type of Cleaning Would You Like?</h4>
         <ButtonGroup>
-          <div> <input type="radio" id={} /> <label>One-Time</label> </div>
+          <div> <input type="radio" id="onetime" /> <label for="onetime" >One-Time</label> </div>
+          <div> <input type="radio" id="onetime" /> <label for="onetime" >One-Time</label> </div>
+          <div> <input type="radio" id="onetime" /> <label for="onetime" >One-Time</label> </div>
         </ButtonGroup>
       </div>
     </div>

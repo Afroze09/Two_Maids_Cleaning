@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 export default function Video() {
   return (
-    <section className="px-[150px] bg-[#efedee]  w-full py-5">
+    <section className="px-[250px] bg-[#efedee]  w-full py-4">
       <h1 className="text-center text-5xl font-semibold font-[TiemposFine] mb-5 text-[#cf2680] ">Powered by Caring</h1>
       <video
         controls
         preload="metadata"
         poster="https://res.cloudinary.com/twomaidsengi/image/upload/f_auto/v1614356825/next-site/pay.jpg"
-        className="h-[500px] mx-auto mb-5"
+        className="h-full w-full mx-auto mb-4"
       >
         <source
           src="https://res.cloudinary.com/twomaidsengi/video/upload/q_auto/v1601655744/next-site/pay-for-performance-h265.mp4"
@@ -22,7 +22,7 @@ export default function Video() {
         </div>
       
       <div className='grid grid-cols-1 text-center mb-4' >
-        <Link className='no-underline'><button className=' pink-btn font-extrabold mr-10 p-2' >LEARN ABOUT PAY FOR PERFORMANCE</button></Link>
+        <Link className='no-underline'><button className=' pink-btn font-extrabold p-2' >LEARN ABOUT PAY FOR PERFORMANCE</button></Link>
         </div>
     </section>
   );
