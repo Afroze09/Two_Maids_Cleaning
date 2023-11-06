@@ -1,116 +1,61 @@
-import React, { useEffect } from "react"
-import Glide from "@glidejs/glide"
-
+import React from "react";
+import Carousel from "react-bootstrap/Carousel";
+import { reviews } from "../reviews";
+import star from '../Images/star.png';
+import { Link } from "react-router-dom";
+import readers from '../Images/Readers.png';
+import cnbc from "../Images/cnbc.png";
+import cnn from '../Images/cnn.png';
+import better from '../Images/better.png';
+import yahoo from '../Images/yahoo.png';
 export default function Reviews() {
-  useEffect(() => {
-    const slider = new Glide(".glide-01", {
-      type: "slider",
-      focusAt: "center",
-      perView: 1,
-      autoplay: 3000,
-      animationDuration: 700,
-      gap: 0,
-      classes: {
-        nav: {
-          active: "[&>*]:bg-wuiSlate-700",
-        },
-      },
-    }).mount()
+  const reviewsChunks = [];
 
-    return () => {
-      slider.destroy()
-    }
-  }, [])
+  // Split the reviews array into chunks of 3
+  for (let i = 0; i < reviews.length; i += 3) {
+    reviewsChunks.push(reviews.slice(i, i + 3));
+  }
 
   return (
-    <>
-      {/*<!-- Component: Slider with controls inside --> */}
-      <div className="relative w-full glide-01">
-        {/*    <!-- Slides --> */}
-        <div className="overflow-hidden" data-glide-el="track">
-          <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
-            <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/image-01.jpg"
-                className="w-full max-w-full max-h-full m-auto"
-              />
-            </li>
-            <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/image-02.jpg"
-                className="w-full max-w-full max-h-full m-auto"
-              />
-            </li>
-            <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/image-03.jpg"
-                className="w-full max-w-full max-h-full m-auto"
-              />
-            </li>
-            <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/image-04.jpg"
-                className="w-full max-w-full max-h-full m-auto"
-              />
-            </li>
-            <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/image-05.jpg"
-                className="w-full max-w-full max-h-full m-auto"
-              />
-            </li>
-          </ul>
+    <div className="w-full bg-[#f9ddeb]">
+      <h1 className="pt-3 text-center text-[#cf2680] mb-10 text-5xl">
+        A Few Kind Words
+      </h1>
+      <Carousel indicators={false} className='mb-10'>
+        {reviewsChunks.map((review, index) => (
+          <Carousel.Item key={index} className="h-full w-full">
+            <div className="flex justify-evenly h-full items-center px-10 mx-5">
+              {review.map((v) => (
+                <div key={v.id} className="text-left min-h-[375px] p-4 rounded bg-white max-w-[370px]">
+                  <h1 className="text-[17px] italic font-extrabold text-[#cf2680] ">{v.name}</h1>
+                  <span className="text-[17px] italic text-[#cf2680]">{v.location}</span>
+                  <div className="flex gap-2 my-4">
+                    <img src={star} alt="" className="h-4"/>
+                    <img src={star} alt="" className="h-4"/>
+                    <img src={star} alt="" className="h-4"/>
+                    <img src={star} alt="" className="h-4"/>
+                    <img src={star} alt="" className="h-4"/>
+                  </div>
+                  <p className="text-[#4d4d4d] text-[15px] font-medium">{v.desc}</p>
+                </div>
+              ))}
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+      <div className='flex justify-center items-center text-center mb-20' >
+        <Link className='no-underline'><button className=' pink-btn font-extrabold p-2' >READ MORE REVIEWS</button></Link>
         </div>
-        {/*    <!-- Controls --> */}
-        <div
-          className="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2 "
-          data-glide-el="controls"
-        >
-          <button
-            className="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full border-slate-700 bg-white/20 text-slate-700 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
-            data-glide-dir="<"
-            aria-label="prev slide"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-5 h-5"
-            >
-              <title>prev slide</title>
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
-              />
-            </svg>
-          </button>
-          <button
-            className="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full border-slate-700 bg-white/20 text-slate-700 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
-            data-glide-dir=">"
-            aria-label="next slide"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-5 h-5"
-            >
-              <title>next slide</title>
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-              />
-            </svg>
-          </button>
+        <div >
+        <h3 className="text-sm text-center text-[#4d4d4d] ">Featured in:</h3>
+          <div className="flex justify-evenly items-center w-full px-32 py-6">
+            <img src={readers} alt="" className="h-14" />
+            <img src={better} alt="" className="h-14" />
+            <img src={cnbc} alt="" className="h-6" />
+            <img src={yahoo} alt="" className="h-14" />
+            <img src={cnn} alt="" className="h-14" />
+          </div>
         </div>
-      </div>
-      {/*<!-- End Slider with controls inside --> */}
-    </>
-  )
+    </div>
+  );
 }

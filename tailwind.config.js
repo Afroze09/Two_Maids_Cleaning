@@ -2,10 +2,14 @@
 module.exports = {
   content: [
     "./src/**/*.{html,css,js,jsx,ts,tsx}",
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
     extend: {
+        textColor: {
+                pink: '#cf2680'
+        },
       keyframes: {
         slide:{
           '0%,100%' : {opacity:0},
