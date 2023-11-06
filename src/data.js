@@ -1,3 +1,15 @@
+export const serviceinfo = [
+    `We’re proud to provide safe and reliable professional-grade
+    cleaning supplies and products. Each of our teams of Two Maids
+    has been professionally trained to deliver high quality house
+    cleaning services. We offer multiple cleaning packages that are
+    designed to meet the demands of any home owner. Whether you need
+    your house cleaning services on a regular basis or just one
+    time, we have a cleaning option that's right for you. A
+    comprehensive description of each cleaning package is below.
+    `
+]
+
 export const data = [
     {
         id : 1,

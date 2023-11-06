@@ -7,7 +7,7 @@ export default function CustomCarousel() {
     <div className="relative w-full">
       <Carousel controls={false} indicators={false} className="h-[90vh]">
       {
-        corouselImg.map(v=>{
+        corouselImg.map(v=>{ 
                 return <Carousel.Item interval={2000}>
                         <img
                                 className="d-block h-[90vh] w-100"

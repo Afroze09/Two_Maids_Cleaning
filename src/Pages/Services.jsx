@@ -5,8 +5,9 @@ import { data, title } from "../data";
 import OneTime from "../Components/OneTime";
 import { Collapse } from "react-bootstrap";
 import Rooms from "../Components/Rooms";
+import { serviceinfo} from "../data"
 const Services = () => {
-const [open,setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <>
@@ -21,17 +22,15 @@ const [open,setOpen] = useState(false);
           }}
         >
           <div className="ml-20 mt-40 w-[520px]">
-            <h1 className="text-6xl font-bold text-pink-600">Our Services</h1>
-            <p className=" services-package-description text-lg break-words mt-10 text-gray-500">
-              We’re proud to provide safe and reliable professional-grade
-              cleaning supplies and products. Each of our teams of Two Maids has
-              been professionally trained to deliver high quality house cleaning
-              services. We offer multiple cleaning packages that are designed to
-              meet the demands of any home owner. Whether you need your house
-              cleaning services on a regular basis or just one time, we have a
-              cleaning option that's right for you. A comprehensive description
-              of each cleaning package is below.
-            </p>
+            <div>
+              <h1 className="text-6xl font-bold text-pink-600">Our Services</h1>
+              {serviceinfo.map((v) => (
+              <p className=" services-package-description text-lg break-words mt-10 text-gray-500">
+                {v}
+              </p>
+            ))}
+              
+            </div>
             <div className="flex justify-evenly mt-16 -ml-5">
               <button className="h-10 w-48 text-white font-bold justify-evenly bg-pink-600">
                 ONE-TIME-CLEAN
@@ -42,11 +41,13 @@ const [open,setOpen] = useState(false);
             </div>
           </div>
         </div>
-       
       </div>
       <div className=" w-full">
-          <OneTime />
-        </div>
+        <OneTime />
+      </div>
+      <div className=" w-full">
+        
+      </div>
     </>
   );
 };
