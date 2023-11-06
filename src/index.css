@@ -45,7 +45,9 @@ code {
   color: #cf2680 !important;
 
 }
-
+.progress-bar{
+        background-color: #cf2680 !important;
+}
 .text-pink{
         color: #cf2680;
 }
@@ -131,4 +133,11 @@ code {
   background-size: cover;
   background-position: center;
   border-radius: 50%;
+}
+input[type="radio"]:checked,input[type="radio"]:active{
+        color: #cf2680;
+}
+
+[data-container="side-panel"]{
+        display: none !important;
 }

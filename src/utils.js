@@ -46,3 +46,60 @@ export const services = [
             desc: 'We are a multi-award-winning company that is over 15 years in the making. We currently serve over 500 customers each day across the country.'
         },
     ]
+
+export const optionSel = {
+        onetime: [
+          {
+            topic: "Design With Time",
+            tooltip:
+              "Our Design with Time Cleaning Package is ideal for the homeowner wanting a one-time clean or spot clean. This cleaning package offers a fixed rate based on the amount of time you would like our cleaning team servicing your home. Our Design with Time Package ranges from 2 to 5 hours. The two maids assigned to your home will tackle your cleaning needs in order of importance, as prioritized by you. We will do our best to complete your list, within the time you have predetermined.",
+          },
+          {
+            topic: "Deep Clean",
+            tooltip:
+              "Our Deep Cleaning Package is the most thorough cleaning service. The most significant difference between the Deep Cleaning Package and our other cleaning packages is the amount of time and detail we spend cleaning what we refer to as your vertical surfaces. Vertical surfaces include baseboards, trim work, interior windows, blinds, exterior cabinets/drawers, light fixtures, and doors.",
+          },
+          {
+            topic: "Move In/Move Out",
+            tooltip:
+              "Our Empty Home Move In/Out Cleaning Package is perfect for the homeowner who needs a completely empty home, apartment, or condo cleaned. All reachable vertical and horizontal surfaces shall be cleaned. In the case of an apartment or condo, we are often able to work directly with your property manager to determine the cleaning requirements necessary to receive your full security deposit.",
+          },
+        ],
+        weekly: [
+          {
+            topic: "Premium Weekly",
+            tooltip:
+              "The Premium Maintenance Cleaning package offers our most detailed cleaning service for customers that desire a thorough home cleaning on a regular basis. In addition, this package includes spot cleaning of the vertical surfaces, such as baseboards, trim work, interior windows, blinds, and cabinets/drawers. It can be performed on a weekly, biweekly, or monthly basis.",
+          },
+          {
+            topic: "Alternating Weekly",
+            tooltip:
+              "With the Alternating Cleaning Package we are able to alternate your cleaning services between our Premium and Touch-Up cleaning services. This specific cleaning package is best suited for the homeowner who does not require detailed cleaning on a regular basis, but still wishes to receive high quality house cleaning once a week, or every other week.",
+          },
+        ],
+        biweekly: [
+          {
+            topic: "Premium Biweekly",
+            tooltip:
+              "The Premium Maintenance Cleaning package offers our most detailed cleaning service for customers that desire a thorough home cleaning on a regular basis.",
+          },
+          {
+            topic: "Alternating Biweekly",
+            tooltip:
+              "With the Alternating Cleaning Package we are able to alternate your cleaning services between our Premium and Touch-Up cleaning services. This specific cleaning package is best suited for the homeowner who does not require detailed cleaning on a regular basis, but still wishes to receive high quality house cleaning once a week, or every other week.",
+          },
+        ],
+        monthly: [
+          {
+            topic: "Premium Monthly",
+            tooltip:
+              "The Premium Maintenance Cleaning package offers our most detailed cleaning service for customers that desire a thorough home cleaning on a regular basis.",
+          },
+        ],
+      };    
+
+    export const handleScroll=()=> window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });      
