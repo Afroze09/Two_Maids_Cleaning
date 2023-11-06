@@ -1,13 +1,17 @@
 import React from 'react'
-import Navbar from '../Components/Navbar'
-import Component from '../Components/Footer'
-
-
+import CustomCarousel from '../Components/Carousel'
+import Ourservices from '../Components/Ourservices'
+import Video from '../Components/video'
+import Reviews from '../Components/Reviews'
+import Modal from '../Components/Modal'
 export default function Home() {
   return (
-    <div className='home-body'>
-      <Navbar />
-      <Component/>
-    </div>
+    < >
+      <CustomCarousel />
+      <Ourservices />
+      <Video />
+      <Reviews />
+      <Modal />
+    </>
   )
 }
