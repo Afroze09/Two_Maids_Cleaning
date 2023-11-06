@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
+import Form from "react-bootstrap/Form";
+import InputGroup from "react-bootstrap/InputGroup";
+import { ButtonGroup } from "react-bootstrap";
+
 export default function Book() {
   const [step, setStep] = useState(1);
   const place = "Bangalore";
@@ -57,54 +59,87 @@ export default function Book() {
         </div>
         <h3>Contact Details</h3>
         <InputGroup className="mb-3 ">
-          <InputGroup.Text > <h5 className="text-pink mt-1">First and last name</h5> </InputGroup.Text>
-          <Form.Control aria-label="First name" className="border-2 border-gray-700" />
-          <Form.Control aria-label="Last name" className="border-2 border-gray-700" />
+          <InputGroup.Text>
+            {" "}
+            <h5 className="text-pink mt-1">First and last name</h5>{" "}
+          </InputGroup.Text>
+          <Form.Control
+            aria-label="First name"
+            className="border-2 border-gray-700"
+          />
+          <Form.Control
+            aria-label="Last name"
+            className="border-2 border-gray-700"
+          />
         </InputGroup>
-        <Form.Control aria-label="First name" className="border-2 border-gray-700 " placeholder="Enter Phone Number"/>
-        <Form.Control type="email" aria-label="First name" className="border-2 mt-3 border-gray-700" placeholder="Enter Email"/>
-        <p className="mt-2">By proceeding to the next step of the form, you agree to receive calls, text messages, or emails at the contact information provided. Message rates may apply. Text STOP to opt out at any time. <a href="" className="text-dark">Terms and Conditions apply.</a> </p>
+        <Form.Control
+          aria-label="First name"
+          className="border-2 border-gray-700 "
+          placeholder="Enter Phone Number"
+        />
+        <Form.Control
+          type="email"
+          aria-label="First name"
+          className="border-2 mt-3 border-gray-700"
+          placeholder="Enter Email"
+        />
+        <p className="mt-2">
+          By proceeding to the next step of the form, you agree to receive
+          calls, text messages, or emails at the contact information provided.
+          Message rates may apply. Text STOP to opt out at any time.{" "}
+          <a href="" className="text-dark">
+            Terms and Conditions apply.
+          </a>{" "}
+        </p>
         <hr />
         <h4>Tell Us About the Job</h4>
         <InputGroup size="sm" className="mb-3 ">
-        <InputGroup.Text id="inputGroup-sizing-sm">Bedrooms</InputGroup.Text>
-        <Form.Control
-        type="number"
-          aria-label="Small"
-          aria-describedby="inputGroup-sizing-sm"
-          className="me-2"
-          placeholder="0"        />
-        <InputGroup.Text id="inputGroup-sizing-sm">Bathrooms</InputGroup.Text>
-        <Form.Control
-        type="number"
-          aria-label="Small"
-          aria-describedby="inputGroup-sizing-sm"
-          className="me-2" placeholder="0" 
-        />
-        
-        <InputGroup.Text id="inputGroup-sizing-sm">People</InputGroup.Text>
-        <Form.Control
-        type="number"
-          aria-label="Small"
-          aria-describedby="inputGroup-sizing-sm"
-          className="me-2" placeholder="0" 
-        />
-        <InputGroup.Text id="inputGroup-sizing-sm">Pets</InputGroup.Text>
-        <Form.Control
-        type="number"
-          aria-label="Small"
-          aria-describedby="inputGroup-sizing-sm"
-          className="me-2" placeholder="0" 
-        />
-        <InputGroup.Text id="inputGroup-sizing-sm">Sqare footage</InputGroup.Text>
-        <Form.Control
-        type="number"
-          aria-label="Small" placeholder="0" 
-          aria-describedby="inputGroup-sizing-sm"
-        />
-      </InputGroup>
+          <InputGroup.Text id="inputGroup-sizing-sm">Bedrooms</InputGroup.Text>
+          <Form.Control
+            type="number"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+            className="me-2"
+            placeholder="0"
+          />
+          <InputGroup.Text id="inputGroup-sizing-sm">Bathrooms</InputGroup.Text>
+          <Form.Control
+            type="number"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+            className="me-2"
+            placeholder="0"
+          />
+
+          <InputGroup.Text id="inputGroup-sizing-sm">People</InputGroup.Text>
+          <Form.Control
+            type="number"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+            className="me-2"
+            placeholder="0"
+          />
+          <InputGroup.Text id="inputGroup-sizing-sm">Pets</InputGroup.Text>
+          <Form.Control
+            type="number"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+            className="me-2"
+            placeholder="0"
+          />
+          <InputGroup.Text id="inputGroup-sizing-sm">Sqare ft</InputGroup.Text>
+          <Form.Control
+            type="number"
+            aria-label="Small"
+            placeholder="0"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </InputGroup>
+        <h4>What Type of Cleaning Would You Like?</h4>
+        <ButtonGroup>
+          <div> <input type="radio" id={} /> <label>One-Time</label> </div>
+        </ButtonGroup>
       </div>
-      
     </div>
   );
 }
