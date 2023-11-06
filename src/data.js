@@ -20,7 +20,9 @@ export const rooms = [
     {
         id : 1,
         title:'Kitchen',
-        details:['Inside/Outside of Microwave & Oven','Glass Surfaces','Empty Trash','Backsplash']
+        details:['Inside/Outside of Microwave & Oven', 'Counter', 'Tops Outside of Cabinets & Drawers','Glass Surfaces', 'Ceiling Fans', 'Pantry Floor & Door','Empty Trash',  'Baseboards',  'Top of Refrigerator','Backsplash',   'Sink and Chrome' , 'Baker’s Rack & Shelves','Exterior of Trash Can', 'Cobwebs',   'Shelves','Sweep Floors',   'Windows, Window Sills & Blinds', 'Tables and Chairs',
+    'Outside Of Stove Hood',  'Mirrors' , 'Outside of Appliances','Light Fixtures',   'Ledges',   'Wash One Sinkload Of Dishes',
+        'Mop Floors',   'Door & Door Frames']
     },
     {
         id : 2,

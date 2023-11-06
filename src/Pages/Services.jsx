@@ -10,7 +10,6 @@ const [open,setOpen] = useState(false);
 
   return (
     <>
-      <Navbar />
       <div className="h-full w-full">
         <div
           className="main-info h-[100vh] w-full p-3"
@@ -43,11 +42,11 @@ const [open,setOpen] = useState(false);
             </div>
           </div>
         </div>
-        <div className=" w-full">
+       
+      </div>
+      <div className=" w-full">
           <OneTime />
         </div>
-      </div>
-      <Footer />
     </>
   );
 };

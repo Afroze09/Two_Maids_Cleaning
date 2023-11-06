@@ -5,6 +5,7 @@ import AboutUs from "./Pages/AboutUs";
 import Navbar from "./Components/Navbar";
 import CustomFooter from "./Components/Footer";
 import Book from "./Pages/Book";
+import Services from "./Pages/Services";
 const App = () => {
   return (
     <div className="h-screen w-screen relative">
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<Home />}></Route>
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/book" element={<Book />} />
+          <Route path="/services" element={<Services />}/>
         </Routes>
 
         <CustomFooter />

@@ -15,7 +15,7 @@ const OneTime = () => {
     setVisibleC(buttonIndex === 2);
   };
   return (
-    <div className="flex flex-col ">
+    <div className="flex w-full flex-col ">
       <div
         className={`${data[0].bg} h-24 flex  items-center justify-center  w-full`}
       >
@@ -31,7 +31,7 @@ const OneTime = () => {
           <i className="fi fi-rs-angle-circle-down ml-5 text-2xl text-[#cf2680] font-semibold cursor-pointer" />
         </button>
       </div>
-      <Collapse in={open}>
+      <Collapse in={open} className="h-full">
         <div className={`${data[0].bg} text-center h-full w-full px-[140px]`}>
           <div className="flex flex-col  w-full ">
             <div className="flex items-center font-semibold justify-evenly w-full ">
@@ -63,7 +63,7 @@ const OneTime = () => {
               </Collapse>
               <Collapse in={visibleB}>
                 <p>{title[1].desc}</p>
-              </Collapse>{" "}
+              </Collapse>
               <Collapse in={visibleC}>
                 <p>{title[2].desc}</p>
               </Collapse>
