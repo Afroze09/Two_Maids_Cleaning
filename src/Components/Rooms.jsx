@@ -43,9 +43,9 @@ const Rooms = () => {
                 <div className="kitchen-data py-5">
                   <ul className="list-disc grid gap-3  grid-cols-3">
                     {
-                      roomDetails[0].map((item,index)=>{
+                      roomDetails[0].map((item)=>{
                         return(
-                          <li id={`example-collapse-text-${r.id}`} key={index}>{item}</li>
+                          <li id={`example-collapse-text-${r.id}`}>{item}</li>
                         )
                       })
                     }
