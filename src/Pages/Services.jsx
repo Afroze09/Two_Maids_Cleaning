@@ -1,14 +1,8 @@
-import React, { useState } from "react";
-import Navbar from "../Components/Navbar";
-import { Footer } from "flowbite-react";
-import { data, title } from "../data";
+import React from "react";
 import OneTime from "../Components/OneTime";
-import { Collapse } from "react-bootstrap";
-import Rooms from "../Components/Rooms";
-import { serviceinfo} from "../data"
-const Services = () => {
-  const [open, setOpen] = useState(false);
+import { serviceinfo } from "../data";
 
+const Services = () => {
   return (
     <>
       <div className="h-full w-full">
@@ -22,15 +16,14 @@ const Services = () => {
           }}
         >
           <div className="ml-20 mt-40 w-[520px]">
-            <div>
-              <h1 className="text-6xl font-bold text-pink-600">Our Services</h1>
-              {serviceinfo.map((v) => (
-              <p className=" services-package-description text-lg break-words mt-10 text-gray-500">
-                {v}
-              </p>
-            ))}
-              
-            </div>
+            <h1 className="text-6xl font-bold text-pink-600">Our Services</h1>
+            {serviceinfo.map((info) => {
+              return (
+                <p className=" text-lg break-words mt-10 text-gray-500">
+                  {info}
+                </p>
+              );
+            })}
             <div className="flex justify-evenly mt-16 -ml-5">
               <button className="h-10 w-48 text-white font-bold justify-evenly bg-pink-600">
                 ONE-TIME-CLEAN
@@ -40,14 +33,21 @@ const Services = () => {
               </button>
             </div>
           </div>
+          {/* <img className='h-[100%] w-full' src= alt="" /> */}
         </div>
+        {/* <div className="flex justify-evenly mt-16 -ml-5">
+          <button className="h-10 w-48 text-white font-bold justify-evenly bg-pink-600">
+            ONE-TIME-CLEAN
+          </button>
+          <button className="h-10 w-48 text-white font-bold justify-evenly bg-pink-600">
+            RECURRING CLEAN
+          </button>
+        </div> */}
       </div>
       <div className=" w-full">
         <OneTime />
       </div>
-      <div className=" w-full">
-        
-      </div>
+      <div className=" w-full"></div>
     </>
   );
 };
