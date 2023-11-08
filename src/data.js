@@ -37,7 +37,30 @@ export const rooms = [
     },
     {
         id : 2,
-        title:'Bathrooms'
+        title:'Bathrooms',
+        details:['Shower',
+        'Polish Faucets',
+        'Furniture',
+        'Tub',
+        'Mirrors',
+        'Empty Trash',
+        'Toilet',
+        'Glass Surfaces',
+        'Sweep Floors',
+        'Counters',
+        'Shelves',
+        'Mop Floors',
+        'Sink',
+        'Light Fixtures',
+        'Cobwebs',
+        'Metal & Glassware',
+        'Air Vents',
+        'Ledges',
+        'Windows, Windows Sills & Blinds',
+        'Door & Door Frames',
+        'Outside of Cabinets & Drawers',
+        'Vacuum Rugs',
+        'Baseboards']
      
     },
     {

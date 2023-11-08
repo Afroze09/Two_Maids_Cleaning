@@ -16,7 +16,7 @@ const Services = () => {
           }}
         >
           <div className="ml-20 mt-40 w-[520px]">
-            <h1 className="text-6xl font-bold text-pink-600">Our Services</h1>
+            <h1 className="text-6xl font-bold text-[#015d9c]">Our Services</h1>
             {serviceinfo.map((info) => {
               return (
                 <p className=" text-lg break-words mt-10 text-gray-500">
@@ -25,10 +25,10 @@ const Services = () => {
               );
             })}
             <div className="flex justify-evenly mt-16 -ml-5">
-              <button className="h-10 w-48 text-white font-bold justify-evenly bg-pink-600">
+              <button className="h-10 w-48 text-white font-bold justify-evenly bg-[#015d9c]">
                 ONE-TIME-CLEAN
               </button>
-              <button className="h-10 w-48 text-white font-bold justify-evenly bg-pink-600">
+              <button className="h-10 w-48 text-white font-bold justify-evenly bg-[#015d9c]">
                 RECURRING CLEAN
               </button>
             </div>

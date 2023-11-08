@@ -19,7 +19,7 @@ const OneTime = () => {
       <div
         className={`${data[0].bg} h-24 flex  items-center justify-center  w-full`}
       >
-        <h1 className="text-[#cf2680] text-2xl  text-center font-semibold">
+        <h1 className="text-[#015d9c] text-2xl  text-center font-semibold">
           {data[0].title}
         </h1>
         <button
@@ -28,7 +28,7 @@ const OneTime = () => {
           aria-expanded={open}
           className="down"
         >
-          <i className="fi fi-rs-angle-circle-down ml-5 text-2xl text-[#cf2680] font-semibold cursor-pointer" />
+          <i className="fi fi-rs-angle-circle-down ml-5 text-2xl text-[#015d9c] font-semibold cursor-pointer" />
         </button>
       </div>
       <Collapse in={open} className="h-full">
