@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Dropdown from "react-bootstrap/Dropdown";
-import { Button } from "react-bootstrap";
+import { Navbar , Dropdown } from "flowbite-react";
 
-export default function Navbar() {
+export default function CustomNavbar() {
   return (
     <section className="px-4">
       <div
@@ -19,14 +18,14 @@ export default function Navbar() {
           <div className="font-semibold w-full h-[2ixed text-gray-600 flex items-center justify-between">
             <div className="text-md flex items-center gap-x-2 mt-3">
               <span>Your store </span>
-              <Link className="text-[#cf2680] font-bold no-underline">
+              <Link className="text-[#55a7e0] font-bold no-underline">
                 CHESTERFIELD
               </Link>
             </div>
             <div className="h-full text-md">
               <span className="mr-2">
                 Call for a Free Estimate!{" "}
-                <Link className="text-[#cf2680] font-bold no-underline mr-2">
+                <Link className="text-[#55a7e0] font-bold no-underline mr-2">
                   (636) 600-4480
                 </Link>
               </span>
@@ -36,7 +35,30 @@ export default function Navbar() {
         </nav>
         <hr />
         <nav className="h-[50px] flex items-center justify-between mb-4 ">
-          <Link to="/">
+        <Navbar fluid rounded>
+      <Navbar.Brand as={Link} to="https://flowbite-react.com">
+        <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
+      </Navbar.Brand>
+      <Navbar.Toggle />
+      <Navbar.Collapse>
+        <Navbar.Link as={Link} to={"/services"} >
+          Services
+        </Navbar.Link>
+        <Navbar.Link as={Link} to="#">
+          Locations
+        </Navbar.Link>
+        <Navbar.Link as={Link} to="#">Why Hire Us</Navbar.Link>
+        <Navbar.Link as={Link} to="#">Franchise Opportunities</Navbar.Link>
+        <Dropdown label="More" inline id="dropdownHover" className='drop'>
+      <Dropdown.Item as={Link} to={'/aboutus'}>About</Dropdown.Item>
+      <Dropdown.Item as={Link} to>Careers</Dropdown.Item>
+      <Dropdown.Item as={Link} to>Blog</Dropdown.Item>
+      <Dropdown.Item as={Link} to>Reviews</Dropdown.Item>
+      <Dropdown.Item as={Link}>Contact Us</Dropdown.Item>
+    </Dropdown>
+      </Navbar.Collapse>
+    </Navbar>
+          {/* <Link to="/">
             <img
               src="https://twomaidscleaning.com/_next/image/?url=https%3A%2F%2Fres.cloudinary.com%2Ftwomaidsengi%2Fimage%2Fupload%2Fc_scale%2Cf_auto%2Cq_auto%2Cw_1014%2Fv1670257150%2Fhubsite-reskin%2Ftwo-maids-logo-pink.png&w=2048&q=75"
               alt=""
@@ -104,7 +126,7 @@ export default function Navbar() {
                 </Link>
               </Dropdown.Menu>
             </Dropdown>
-          </ul>
+          </ul> */}
         </nav>
       </div>
     </section>

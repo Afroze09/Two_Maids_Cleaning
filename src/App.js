@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
-import Navbar from "./Components/Navbar";
+import CustomNavbar from "./Components/Navbar";
 import CustomFooter from "./Components/Footer";
 import Book from "./Pages/Book";
 import Services from "./Pages/Services";
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="h-screen w-screen relative">
       <BrowserRouter>
-        <Navbar />
+        {/* <CustomNavbar /> */}
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/aboutUs" element={<AboutUs />} />

@@ -23,7 +23,7 @@ export default function Modal() {
           };
         }, []);
   return (
-    <div className={`h-[100px] w-full bg-pink-700 flex  items-center fixed bottom-0 left-0 z-10 py-2 px-10 ${
+    <div className={`h-[100px] w-full bg-[#015d9c] flex  items-center fixed bottom-0 left-0 z-10 py-2 px-10 ${
         modalVisible ? 'translate-y-0' : 'translate-y-full'
       } transition-transform duration-300 ease-in-out transform`}>
         <div className="flex justify-between items-center w-full">

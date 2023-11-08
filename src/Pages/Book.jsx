@@ -12,7 +12,7 @@ const ProgressCheck = ({ step,setStep }) => {
         Contact
         <br />
         Information
-        <h1 onClick={()=>setStep(0)} className="mt-3 h-14 w-14 center-element rounded-full cur bg-white text-pink">
+        <h1 onClick={()=>setStep(0)} className="mt-3 h-14 w-14 center-element rounded-full cur bg-white text-[#015d9c]">
           1
         </h1>
       </div>
@@ -20,7 +20,7 @@ const ProgressCheck = ({ step,setStep }) => {
         Schedule
         <br />
         Cleaning
-        <h1 className="mt-3 h-14 w-14 center-element rounded-full bg-white  text-pink">
+        <h1 className="mt-3 h-14 w-14 center-element rounded-full bg-white  text-[#015d9c]">
           2
         </h1>
       </div>
@@ -28,7 +28,7 @@ const ProgressCheck = ({ step,setStep }) => {
         Review &
         <br />
         Purchase
-        <h1 className="mt-3 h-14 w-14  center-element rounded-full bg-white  text-pink">
+        <h1 className="mt-3 h-14 w-14  center-element rounded-full bg-white  text-[#015d9c]">
           3
         </h1>
       </div>
@@ -56,7 +56,7 @@ export default function Book() {
   const place = "Bangalore";
   return (
     <div className="w-screen">
-      <div className=" mx-auto shadow-lg w-[800px] rounded-lg text-white p-5 z-0 bg-pink-500  ">
+      <div className=" mx-auto shadow-lg w-[800px] rounded-lg text-white p-5 z-0 bg-[#015d9c]  ">
         {step === 0 ? (
           <div className="flex flex-col">
             <h1 className="text-6xl">Let's Get Started</h1>
@@ -84,7 +84,7 @@ export default function Book() {
             <h4 className="mt-4">Contact Details</h4>
             <InputGroup className="mb-3 ">
               <InputGroup.Text>
-                <h5 className="text-pink mt-1">First and last name</h5>
+                <h5 className="text-[#015d9c] mt-1">First and last name</h5>
               </InputGroup.Text>
               <Form.Control
                 aria-label="First name"
