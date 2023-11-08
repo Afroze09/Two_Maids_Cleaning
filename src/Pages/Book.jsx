@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
+import { Multiselect } from 'multiselect-react-dropdown'
 import { ButtonGroup } from "react-bootstrap";
 import { handleScroll, optionSel } from "../utils";
 import { Link } from "react-router-dom";
+import { objectArray } from "../data";
 const ProgressCheck = ({ step,setStep }) => {
   return (
     <div className="flex justify-between text-xl relative">
@@ -166,6 +168,8 @@ export default function Book() {
               />
             </InputGroup>
             <h4 className="mt-3">What Type of Cleaning Would You Like?</h4>
+            <Multiselect className="text-black" options={objectArray}displayValue="option"
+            showCheckbox={true}/>
             <ButtonGroup className="flex justify-between text-lg">
               <div>
                 <input

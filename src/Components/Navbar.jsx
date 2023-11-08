@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Button } from "react-bootstrap";
+import logo from '../Images/logo.png';
 
 export default function Navbar() {
   return (
@@ -38,9 +39,9 @@ export default function Navbar() {
         <nav className="h-[50px] flex items-center justify-between mb-4 ">
           <Link to="/">
             <img
-              src="https://twomaidscleaning.com/_next/image/?url=https%3A%2F%2Fres.cloudinary.com%2Ftwomaidsengi%2Fimage%2Fupload%2Fc_scale%2Cf_auto%2Cq_auto%2Cw_1014%2Fv1670257150%2Fhubsite-reskin%2Ftwo-maids-logo-pink.png&w=2048&q=75"
+              src={logo}
               alt=""
-              className="h-12 -mt-4"
+              className="h-24"
             />
           </Link>
           <ul className="flex items-center -mb-3 gap-x-5 h-full">

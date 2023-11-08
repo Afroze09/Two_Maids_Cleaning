@@ -4,14 +4,13 @@ import { Collapse } from "react-bootstrap";
 
 const Rooms = () => {
   const [visibleButtons, setVisibleButtons] = useState({});
-
   const handleButtonClick = (buttonId) => {
     setVisibleButtons((prevVisibleButtons) => ({
       ...prevVisibleButtons,
       [buttonId]: !prevVisibleButtons[buttonId],
     }));
   };
-
+  const roomDetails = rooms.map((v) => v.details);
   return (
     <div className="px-[100px] w-full">
       <div className="border-t border-[#9f9f9d]">
@@ -36,13 +35,16 @@ const Rooms = () => {
                   </button>
                 </div>
               </div>
-              <Collapse in={visibleButtons[r.id]} className="w-[100vw]">
-                <div className="kitchen-data h-[100vh] grid grid-cols-3 gap-x-5 w-[100vw]">
-                  <ul className="list-disc">
-                    <li id={`example-collapse-text-${r.id}`}>{r.details}</li>
+              <Collapse in={visibleButtons[r.id]}>
+                <div className="kitchen-data py-5">
+                  <ul className="list-disc grid gap-3  grid-cols-3">
+                    {roomDetails[0].map((item, index) => {
+                      return <li key={index}>{item}</li>;
+                    })}
                   </ul>
                 </div>
               </Collapse>
+              
             </>
           );
         })}

@@ -1,14 +1,9 @@
-import React, { useState } from "react";
-import Navbar from "../Components/Navbar";
-import { Footer } from "flowbite-react";
-import { data, title } from "../data";
+import React from "react";
 import OneTime from "../Components/OneTime";
-import { Collapse } from "react-bootstrap";
-import Rooms from "../Components/Rooms";
 import { serviceinfo} from "../data"
+import Recurring from "../Components/Recurring";
+import CommonQuestion from "../Components/CommonQuestion";
 const Services = () => {
-  const [open, setOpen] = useState(false);
-
   return (
     <>
       <div className="h-full w-full">
@@ -38,12 +33,17 @@ const Services = () => {
               <button className="h-10 w-48 text-white font-bold justify-evenly bg-pink-600">
                 RECURRING CLEAN
               </button>
+              <button className="h-10 w-48 text-white font-bold justify-evenly bg-pink-600">
+                COMMON QUESTION
+              </button>
             </div>
           </div>
         </div>
       </div>
       <div className=" w-full">
         <OneTime />
+        <Recurring/>
+        <CommonQuestion/>
       </div>
       <div className=" w-full">
         
