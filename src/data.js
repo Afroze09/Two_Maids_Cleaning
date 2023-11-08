@@ -32,13 +32,35 @@ export const rooms = [
     {
         id : 1,
         title:'Kitchen',
-        details:['Inside/Outside of Microwave & Oven', 'Counter', 'Tops Outside of Cabinets & Drawers','Glass Surfaces', 'Ceiling Fans', 'Pantry Floor & Door','Empty Trash',  'Baseboards',  'Top of Refrigerator','Backsplash',   'Sink and Chrome' , 'Baker’s Rack & Shelves','Exterior of Trash Can', 'Cobwebs',   'Shelves','Sweep Floors',   'Windows, Window Sills & Blinds', 'Tables and Chairs',
-    'Outside Of Stove Hood',  'Mirrors' , 'Outside of Appliances','Light Fixtures',   'Ledges',   'Wash One Sinkload Of Dishes',
-        'Mop Floors',   'Door & Door Frames']
+        details:['Inside/Outside of Microwave & Oven','Counter','Tops Outside of Cabinets & Drawers','Glass Surfaces','Ceiling Fans','Pantry Floor & Door','Empty Trash','Baseboards','Top of Refrigerator','Backsplash','Sink and Chrome','Baker’s Rack & Shelves','Exterior of Trash Can','Cobwebs', 'Shelves','Sweep Floors','Windows, Window Sills & Blinds','Tables and Chairs','Outside Of Stove Hood','Mirrors' ,'Outside of Appliances','Light Fixtures','Ledges','Wash One Sinkload Of Dishes',
+        'Mop Floors','Door & Door Frames']
     },
     {
         id : 2,
-        title:'Bathrooms'
+        title:'Bathrooms',
+        details:['Shower',
+        'Polish Faucets',
+        'Furniture',
+        'Tub',
+        'Mirrors',
+        'Empty Trash',
+        'Toilet',
+        'Glass Surfaces',
+        'Sweep Floors',
+        'Counters',
+        'Shelves',
+        'Mop Floors',
+        'Sink',
+        'Light Fixtures',
+        'Cobwebs',
+        'Metal & Glassware',
+        'Air Vents',
+        'Ledges',
+        'Windows, Windows Sills & Blinds',
+        'Door & Door Frames',
+        'Outside of Cabinets & Drawers',
+        'Vacuum Rugs',
+        'Baseboards']
      
     },
     {

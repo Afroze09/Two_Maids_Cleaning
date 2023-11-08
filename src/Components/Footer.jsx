@@ -6,7 +6,7 @@ export default function CustomFooter() {
   return (
     <footer >
       <div
-        className="bg-[#f9ddeb] h-[30vh] w-full flex items-center justify-center "
+        className="bg-[#a0dcff] h-[30vh] w-full flex items-center justify-center "
         style={{
           backgroundImage:
             'url("https://res.cloudinary.com/twomaidsengi/image/upload/c_scale,q_auto,w_1920/v1670256573/hubsite-reskin/opaque-dots.webp ")',
@@ -21,7 +21,7 @@ export default function CustomFooter() {
           className="h-10 "
         />
       </div>
-      <div className="bg-[#cf2680] overflow-hidden relative footer text-white h-[85vh] w-full py-2  px-[100px]">
+      <div className="bg-[#015d9c] overflow-hidden relative footer text-white h-[85vh] w-full py-2  px-[100px]">
         <div className="footer-circle"></div>
         <div className="footer-circle-two"></div>
         <div className="flex justify-between items-center h-[150px] py-[60px]">
@@ -33,7 +33,7 @@ export default function CustomFooter() {
             </Link>
           </div>
         </div>
-        <hr className="font-extrabold opacity-100  h-1 text-[#f9ddeb] text-lg" />
+        <hr className="font-extrabold opacity-100  h-1 bg-[#a0dcff] text-lg" />
         <div className="flex  w-full py-[90px] ">
           <div className="mr-5">
             <img

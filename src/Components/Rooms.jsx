@@ -10,7 +10,7 @@ const Rooms = () => {
       [buttonId]: !prevVisibleButtons[buttonId],
     }));
   };
-  const roomDetails = rooms.map((v) => v.details);
+const roomDetails = rooms.map(v=>v.details)
   return (
     <div className="px-[100px] w-full">
       <div className="border-t border-[#9f9f9d]">
@@ -37,11 +37,18 @@ const Rooms = () => {
               </div>
               <Collapse in={visibleButtons[r.id]}>
                 <div className="kitchen-data py-5">
-                  <ul className="list-disc grid gap-3  grid-cols-3">
-                    {roomDetails[0].map((item, index) => {
-                      return <li key={index}>{item}</li>;
-                    })}
-                  </ul>
+                  
+                 
+                        <ul className="list-disc grid gap-3  grid-cols-3">
+                          {
+                            roomDetails[0].map((item,index) =>{
+                              return(
+                                <li key={index}>{item}</li>
+                              )
+                            })
+                          }
+                        </ul>
+                      
                 </div>
               </Collapse>
               
