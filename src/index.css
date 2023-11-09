@@ -6,21 +6,23 @@
 @import url("https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
 @import url("https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css");
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0px ;
+  padding: 0px ;
+  padding-right: 0 ;
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: pink;
+  background-color: #a0dcff;
   overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
 code {
@@ -119,7 +121,7 @@ code {
 
 .footer-circle {
   position: absolute;
-  background-color: #f9ddeb;
+  background-color: #a0dcff;
   height: 500px;
   width: 500px;
   border-radius: 50%;
@@ -130,7 +132,7 @@ code {
 }
 .footer-circle-two {
   position: absolute;
-  background-color: #f9ddeb;
+  background-color: #a0dcff;
   height: 500px;
   width: 500px;
   border-radius: 50%;
@@ -212,4 +214,9 @@ button {
 }
 button:hover {
   color: #015d9c;
+}
+@media (min-width:1080px) {
+  body{
+    overflow-x:hidden
+  }
 }

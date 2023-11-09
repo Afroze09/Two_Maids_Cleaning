@@ -6,6 +6,7 @@ module.exports = {
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
+    
     extend: {
         textColor: {
                 pink: '#cf2680'
@@ -35,6 +36,7 @@ module.exports = {
         slide : 'slide 5s linear 5s infinite'
       }
   },
+
   plugins: [
     require('flowbite/plugin')
 ],
