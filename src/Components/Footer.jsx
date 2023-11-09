@@ -4,7 +4,7 @@ import EventButton from "./EventButton";
 export default function CustomFooter() {
         
   return (
-    <footer >
+    <footer className="w-screen" >
       <div
         className="bg-[#a0dcff] h-[30vh] w-full flex items-center justify-center "
         style={{
@@ -15,11 +15,9 @@ export default function CustomFooter() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <img
-          src="https://res.cloudinary.com/twomaidsengi/image/upload/c_scale,f_auto,q_auto,w_2000/v1670273202/hubsite-reskin/let-life-shine-pink.webp"
-          alt=""
-          className="h-10 "
-        />
+       <h1 className="text-9xl font-normal text-center text-[#015d9c] ">
+        Let Life Shine
+      </h1>
       </div>
       <div className="bg-[#015d9c] overflow-hidden relative footer text-white h-[85vh] w-full py-2  px-[100px]">
         <div className="footer-circle"></div>

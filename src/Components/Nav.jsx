@@ -5,10 +5,10 @@ import logo from '../Images/logo.png'
 function Nav() {
     
   return (
-    <section className="px-0 sm:px-4 md:px-4  flex flex-col-reverse md:flex-col sm:flex-col">
-      <nav className=" h-[40px] flex items-center mt-3 " id="navbar">
+    <section className="px-0 md:px-4 lg:px-4  flex flex-col-reverse lg:flex-col md:flex-col w-screen  md:w-screen">
+      <nav className=" h-[40px] flex w-full items-center mt-3 " id="navbar">
         <div className="font-semibold w-full h-full text-gray-600 flex items-center justify-between">
-          <div className="text-md flex items-center h-full sm:h-auto md:h-auto sm:w-auto md:w-auto w-full p-3 sm:px-4 md:px-4 bg-[#a0dcff] sm:bg-transparent md:bg-transparent gap-x-2">
+          <div className="text-md flex items-center h-full  md:h-auto  md:w-auto w-full p-3 md:px-4 bg-[#a0dcff] md:bg-transparent gap-x-2">
             <span>Your store </span>
             <Link className="text-[#015d9c] font-bold no-underline">
               CHESTERFIELD
@@ -26,7 +26,7 @@ function Nav() {
         </div>
       </nav>
       <hr style={{marginTop:'20px',marginBottom:'0'}} className='hidden sm:block md:block'/>
-      <nav className=" px-2  ">
+      <nav className="w-full ">
       <Navbar fluid rounded>
         <Navbar.Brand as={Link} to={'/'}>
           <img

@@ -1,4 +1,5 @@
 import React from "react";
+import Modal from "../Components/Modal";
 import { aboutUs, chesterfield } from "../utils";
 const AboutUs = () => {
   return (

@@ -20,13 +20,13 @@ export default function CustomCarousel() {
     };
   }, []);
   return (
-    <div className="relative w-full">
-      <Carousel controls={false} indicators={false} className="h-[90vh]">
-        {corouselImg.map((v) => {
+    <div className="relative w-screen sm:h-[90vh] h-[70vh]">
+      <Carousel controls={false} indicators={false} className="">
+        {corouselImg.map((v,index) => {
           return (
-            <Carousel.Item interval={2000}>
+            <Carousel.Item interval={2000} key={index}>
               <img
-                className="d-block sm:h-[90vh] h-auto w-100"
+                className="d-block sm:h-[90vh] h-[25vh] w-full"
                 src={v}
                 alt="First Slide"
               />
@@ -35,14 +35,14 @@ export default function CustomCarousel() {
         })}
       </Carousel>
       <div>
-      <h1 className="sm:text-9xl text-7xl absolute top-72 sm:top-20 md:top-20 font-normal sm:text-center text-center left-0 right-0 sm:left-0 sm:right-0 md:left-0 md:right-0 text-[#015d9c]  sm:text-white">
+      <h1 className="sm:text-9xl md:text-7xl text-5xl absolute top-[225px] sm:top-20 md:top-20 font-normal sm:text-center text-center left-0 right-0 sm:left-0 sm:right-0 md:left-0 md:right-0 text-[#015d9c]  sm:text-white">
         Let Life Shine
       </h1>
       <div>
       {isMobile ? (
-        <div className='flex flex-col items-center w-full absolute top-96 '>
+        <div className='flex flex-col items-center w-full absolute top-80 '>
           <Link to="/book">
-            <button className='btn mobile-btn mb-5'>Book Your Cleaning</button>
+            <button className='btn mobile-btn mb-4'>Book Your Cleaning</button>
           </Link>
           <Link to="/book">
             <button className='btn mobile-btn'>Calculate Your Price</button>
