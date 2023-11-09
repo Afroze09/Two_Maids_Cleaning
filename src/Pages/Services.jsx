@@ -1,7 +1,8 @@
 import React from "react";
 import OneTime from "../Components/OneTime";
-import { serviceinfo } from "../data";
-
+import { serviceinfo} from "../data"
+import Recurring from "../Components/Recurring";
+import CommonQuestion from "../Components/CommonQuestion";
 const Services = () => {
   return (
     <>
@@ -31,6 +32,9 @@ const Services = () => {
               <button className="h-10 w-48 text-white font-bold justify-evenly bg-[#015d9c]">
                 RECURRING CLEAN
               </button>
+              <button className="h-10 w-48 text-white font-bold justify-evenly bg-pink-600">
+                COMMON QUESTION
+              </button>
             </div>
           </div>
           {/* <img className='h-[100%] w-full' src= alt="" /> */}
@@ -46,6 +50,8 @@ const Services = () => {
       </div>
       <div className=" w-full">
         <OneTime />
+        <Recurring/>
+        <CommonQuestion/>
       </div>
       <div className=" w-full"></div>
     </>

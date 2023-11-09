@@ -51,6 +51,7 @@ const roomDetails = rooms.map(v=>v.details)
                       
                 </div>
               </Collapse>
+              
             </>
           );
         })}
