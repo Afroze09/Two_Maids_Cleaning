@@ -43,7 +43,7 @@ export default function Reviews() {
         ))}
       </Carousel>
       <div className='flex justify-center items-center text-center mb-20'>
-        <Link className='no-underline'><button className=' pink-btn font-extrabold p-2' >READ MORE REVIEWS</button></Link>
+        <Link className='no-underline'><button className='pink-btn font-extrabold p-2' >READ MORE REVIEWS</button></Link>
       </div>
       <div>
         <h3 className="text-sm text-center text-[#4d4d4d] ">Featured in:</h3>
