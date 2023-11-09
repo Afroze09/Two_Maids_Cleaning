@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 export default function Video() {
   return (
-    <section className="sm:px-[250px] px-3 sm:bg-[#a0dcff] bg-transparent  w-full py-4">
+    <section className="px-[250px] ourservices  sm:bg-[#a0dcff] bg-transparent  w-full py-4">
       <h1 className="text-center sm:text-5xl text-4xl font-semibold font-[TiemposFine] mb-5 text-[#015d9c] ">Powered by Caring</h1>
       <video
         controls

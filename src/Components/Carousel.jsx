@@ -35,7 +35,7 @@ export default function CustomCarousel() {
         })}
       </Carousel>
       <div>
-      <h1 className="sm:text-9xl md:text-7xl text-5xl absolute top-[225px] sm:top-20 md:top-20 font-normal sm:text-center text-center left-0 right-0 sm:left-0 sm:right-0 md:left-0 md:right-0 text-[#015d9c]  sm:text-white">
+      <h1 className="sm:text-9xl  text-5xl absolute top-[225px] sm:top-20 md:top-20 font-normal sm:text-center text-center left-0 right-0 sm:left-0 sm:right-0 md:left-0 md:right-0 text-[#015d9c]  sm:text-white">
         Let Life Shine
       </h1>
       <div>
