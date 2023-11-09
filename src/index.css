@@ -22,8 +22,15 @@ body {
   overflow-x: hidden !important;
   margin: 0 !important;
   padding: 0 !important;
+  
 }
-
+body::-webkit-scrollbar {
+  width: 6px !important;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #a0dcff !important;
+  border-radius: 20px !important;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -200,7 +207,13 @@ ul {
   .drop {
     left: -20px !important;
   }
-  
+  body::-webkit-scrollbar {
+    width: 6px !important;
+  }
+  body::-webkit-scrollbar-thumb{
+    background-color: #a0dcff !important;
+    border-radius: 20px !important;
+  }
 }
 button {
   /* Your styling properties here */

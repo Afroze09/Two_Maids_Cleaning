@@ -20,7 +20,7 @@ export default function Reviews() {
       <h1 className="pt-5 text-center text-[#015d9c] mb-10 text-5xl">
         A Few Kind Words
       </h1>
-      <Carousel indicators={false} className="mb-10">
+      <Carousel indicators={false} className="mb-10 px-5">
         {reviewsChunks.map((reviewGroup, index) => (
           <Carousel.Item key={index} className="h-full w-full">
             <div className="flex justify-evenly h-full items-center sm:px-10 px-1 sm:mx-5 mx-[7px] ">
@@ -43,7 +43,7 @@ export default function Reviews() {
         ))}
       </Carousel>
       <div className='flex justify-center items-center text-center mb-20'>
-        <Link className='no-underline'><button className=' pink-btn font-extrabold p-2' >READ MORE REVIEWS</button></Link>
+        <Link className='no-underline'><button className='pink-btn font-extrabold p-2' >READ MORE REVIEWS</button></Link>
       </div>
       <div>
         <h3 className="text-sm text-center text-[#4d4d4d] ">Featured in:</h3>
