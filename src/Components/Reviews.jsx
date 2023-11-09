@@ -25,7 +25,7 @@ export default function Reviews() {
           <Carousel.Item key={index} className="h-full w-full">
             <div className="flex justify-evenly h-full items-center px-10 mx-5">
               {reviewGroup.map((v, innerIndex) => (
-                <div key={v.id} className={`text-left p-4 rounded bg-white max-w-[370px] min-h-[370px] ${innerIndex > 0 ? 'hidden sm:block' : ''}`}>
+                <div key={v.id} className={`text-left p-4 rounded bg-white max-w-[370px] min-h-[370px] ${innerIndex > 0 ? 'hidden sm:block md:block' : ''}`}>
                   <h1 className="text-[17px] italic font-extrabold text-[#015d9c] ">{v.name}</h1>
                   <span className="text-[17px] italic text-[#015d9c]">{v.location}</span>
                   <div className="flex gap-2 my-4">
@@ -47,12 +47,12 @@ export default function Reviews() {
       </div>
       <div>
         <h3 className="text-sm text-center text-[#4d4d4d] ">Featured in:</h3>
-        <div className="flex flex-wrap justify-evenly items-center w-full sm:px-32 px-2 sm:py-6 py-4 ">
-          <img src={readers} alt="" className="sm:h-14 h-12" />
-          <img src={better} alt="" className="sm:h-14 h-12" />
-          <img src={cnbc} alt="" className="sm:h-6 h-5" />
-          <img src={yahoo} alt="" className="sm:h-14 h-12" />
-          <img src={cnn} alt="" className="sm:h-14 h-12" />
+        <div className="flex flex-wrap justify-evenly items-center w-full sm:px-32 md:px-32 px-2 sm:py-6 md:py-6 py-4 ">
+          <img src={readers} alt="" className="sm:h-14 md:h-14 h-12" />
+          <img src={better} alt="" className="sm:h-14 md:h-14 h-12" />
+          <img src={cnbc} alt="" className="sm:h-6 md:h-6 h-5" />
+          <img src={yahoo} alt="" className="sm:h-14 md:6 h-12" />
+          <img src={cnn} alt="" className="sm:h-14 md:h-14 h-12" />
         </div>
       </div>
     </div>

@@ -23,10 +23,10 @@ export default function Modal() {
           };
         }, []);
   return (
-    <div className={`h-[100px] w-full bg-[#015d9c] flex  items-center fixed bottom-0 left-0 z-10 py-2 px-10 ${
+    <div className={`h-[100px] w-full bg-[#3bb5fc] flex items-center fixed bottom-0 left-0 z-10 py-2 px-10 ${
         modalVisible ? 'translate-y-0' : 'translate-y-full'
       } transition-transform duration-300 ease-in-out transform`}>
-        <div className="flex justify-between items-center w-full">
+        <div className="flex flex-col sm:flex-row justify-between items-center w-full px-4 sm:px-0">
           <EventButton className={`gap-x-4`} />
           <div className="h-full text-md">
             <span className="font-bold mr-3 text-white">Call for a Free Estimate!</span>
