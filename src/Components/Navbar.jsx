@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Button } from "react-bootstrap";
+import { Navbar } from "flowbite-react";
 
 export default function CustomNavbar() {
   return (

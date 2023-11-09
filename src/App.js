@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
-import CustomNavbar from "./Components/Navbar";
 import CustomFooter from "./Components/Footer";
 import Book from "./Pages/Book";
 import Services from "./Pages/Services";

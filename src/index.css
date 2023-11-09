@@ -213,3 +213,27 @@ button {
 button:hover {
   color: #015d9c;
 }
+
+
+@media (max-width: 768px) {
+  .main-info {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-info {
+    background-size: 80%;
+  }
+}
+@media (min-width: 1025px) {
+  .main-info {
+    background-size: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .main-info {
+    background-size: 100%;
+   
+  }
+}
