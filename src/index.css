@@ -154,6 +154,7 @@ code {
   opacity: 0.2;
   z-index: 0;
 }
+
 .footer-circle-two {
   position: absolute;
   background-color: #a0dcff;
@@ -220,7 +221,7 @@ input[type="radio"]:active {
 ul {
   padding-left: 0 !important;
 }
-@media (min-width: 640px) and (min-width:1024px) {
+@media (min-width: 640px) and (max-width:1024px) {
   .drop {
     left: -22px !important;
   }
@@ -241,5 +242,9 @@ button:hover {
   .ourservices{
     padding-left: 8px !important;
     padding-right: 8px !important;
+  }
+  .footer{
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }
