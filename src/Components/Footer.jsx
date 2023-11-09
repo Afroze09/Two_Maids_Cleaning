@@ -34,7 +34,7 @@ export default function CustomFooter() {
         Let Life Shine
       </h1>
       </div>
-      <div className="bg-[#015d9c] lg:overflow-hidden relative footer text-white lg:h-[85vh]  w-full lg:py-2 py-20 md:py-20  lg:px-[100px] px-3  ">
+      <div className="bg-[#015d9c] lg:overflow-hidden relative footer text-white lg:h-[85vh]  w-full lg:py-2 py-20 md:py-20  lg:px-[100px]  ">
         <div className="footer-circle hidden lg:block"></div>
         <div className="footer-circle-two hidden lg:block"></div>
         {(isMobile || isTablet) ? (
