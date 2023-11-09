@@ -18,6 +18,7 @@ const App = () => {
           <Route path="/services" element={<Services />} />
         </Routes>
         <CustomFooter />
+        
       </BrowserRouter>
     </div>
   );

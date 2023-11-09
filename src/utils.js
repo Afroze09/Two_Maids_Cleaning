@@ -29,19 +29,19 @@ export const corouselImg = [
 export const services = [
   {
     id: 1,
-    icon: <i class="fi fi-rs-clipboard"></i>,
+    icon: <i className="fi fi-rs-clipboard"></i>,
     title: "WE SUPPLY EVERYTHING",
     desc: "Two Maids Chesterfield provides all the cleaning supplies and equipment needed to clean your home.",
   },
   {
     id: 2,
-    icon: <i class="fi fi-rs-social-network"></i>,
+    icon: <i className="fi fi-rs-social-network"></i>,
     title: "EXPERIENCED EMPLOYEES",
     desc: "Our employees are friendly, professionally trained, background checked, bonded and insured.",
   },
   {
     id: 3,
-    icon: <i class="fi fi-rs-badge"></i>,
+    icon: <i className="fi fi-rs-badge"></i>,
     title: "PROVEN HISTORY",
     desc: "We are a multi-award-winning company that is over 15 years in the making. We currently serve over 500 customers each day across the country.",
   },

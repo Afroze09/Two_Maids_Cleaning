@@ -16,14 +16,14 @@ export default function Reviews() {
   }
 
   return (
-    <div className="w-full bg-[#a0dcff]">
-      <h1 className="pt-3 text-center text-[#015d9c] mb-10 text-5xl">
+    <div className="w-screen bg-[#a0dcff] sm:px-0 px-4">
+      <h1 className="pt-5 text-center text-[#015d9c] mb-10 text-5xl">
         A Few Kind Words
       </h1>
       <Carousel indicators={false} className="mb-10">
         {reviewsChunks.map((reviewGroup, index) => (
           <Carousel.Item key={index} className="h-full w-full">
-            <div className="flex justify-evenly h-full items-center px-10 mx-5">
+            <div className="flex justify-evenly h-full items-center sm:px-10 px-1 sm:mx-5 mx-[7px] ">
               {reviewGroup.map((v, innerIndex) => (
                 <div key={v.id} className={`text-left p-4 rounded bg-white max-w-[370px] min-h-[370px] ${innerIndex > 0 ? 'hidden sm:block md:block' : ''}`}>
                   <h1 className="text-[17px] italic font-extrabold text-[#015d9c] ">{v.name}</h1>
