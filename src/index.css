@@ -22,6 +22,7 @@ body {
   overflow-x: hidden !important;
   margin: 0 !important;
   padding: 0 !important;
+  scrollbar-color: #a0dcff !important;
   
 }
 body::-webkit-scrollbar {
@@ -99,6 +100,22 @@ code {
 .mobile-btn:hover{
   background-color: #a0dcff8e !important;
 }
+
+.modal-btn{
+  height: 40px;
+  text-align: center;
+  width: auto;
+  font-size: 12px !important;
+  background: white !important;
+  color: #015d9c !important;
+  border: 2px white solid !important;
+  border-radius: 30px !important;
+}
+.modal-btn:hover{
+  background: #015d9c !important;
+  color: white !important;
+}
+
 .dropdown-item:active,
 .dropdown-active {
   background: #015d9c !important;
@@ -137,6 +154,7 @@ code {
   opacity: 0.2;
   z-index: 0;
 }
+
 .footer-circle-two {
   position: absolute;
   background-color: #a0dcff;
@@ -203,16 +221,9 @@ input[type="radio"]:active {
 ul {
   padding-left: 0 !important;
 }
-@media (min-width: 640px) {
+@media (min-width: 640px) and (max-width:1024px) {
   .drop {
-    left: -20px !important;
-  }
-  body::-webkit-scrollbar {
-    width: 6px !important;
-  }
-  body::-webkit-scrollbar-thumb{
-    background-color: #a0dcff !important;
-    border-radius: 20px !important;
+    left: -22px !important;
   }
 }
 button {
@@ -231,5 +242,9 @@ button:hover {
   .ourservices{
     padding-left: 8px !important;
     padding-right: 8px !important;
+  }
+  .footer{
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }
