@@ -5,16 +5,16 @@ import logo from '../Images/logo.png'
 function Nav() {
     
   return (
-    <section className="px-0 md:px-4 sm:px-4 lg:px-4 lg:flex-col flex flex-col-reverse md:flex-col-reverse w-screen sm:w-screen  md:w-screen lg:w-screen">
+    <section className="px-0 md:px-2 sm:px-2 lg:px-4 lg:flex-col flex flex-col-reverse md:flex-col-reverse w-screen sm:w-screen  md:w-screen lg:w-screen">
       <nav className=" h-[40px] flex w-full items-center mt-3 " id="navbar">
         <div className="font-semibold w-full h-full text-gray-600 flex items-center justify-between">
-          <div className="text-md flex items-center h-full  md:h-full lg:w-auto  md:w-full w-full p-3 md:px-4 bg-[#a0dcff] md:bg-[#a0dcff] lg:bg-transparent sm:bg-transparent gap-x-2">
+          <div className="text-md flex items-center h-full  md:h-full lg:w-auto  md:w-full w-full p-3 md:px-4 bg-[#a0dcff] md:bg-[#a0dcff] sm:bg-[#a0dcff] lg:bg-transparent sm:bg-transparent gap-x-2">
             <span>Your store </span>
             <Link className="text-[#015d9c] font-bold no-underline">
               CHESTERFIELD
             </Link>
           </div>
-          <div className="h-full text-md hidden sm:block md:hidden lg:block ">
+          <div className="h-full text-md hidden sm:hidden md:hidden lg:block ">
             <span className="mr-2">
               Call for a Free Estimate!{" "}
               <Link className="text-[#015d9c] font-bold no-underline mr-2">
@@ -25,7 +25,7 @@ function Nav() {
           </div>
         </div>
       </nav>
-      <hr style={{marginTop:'20px',marginBottom:'0'}} className='hidden sm:block lg:block md:hidden'/>
+      <hr style={{marginTop:'20px',marginBottom:'0'}} className='hidden sm:hidden lg:block md:hidden'/>
       <nav className="w-full lg:w-full lg:px-2 ">
       <Navbar fluid rounded>
         <Navbar.Brand as={Link} to={'/'}>

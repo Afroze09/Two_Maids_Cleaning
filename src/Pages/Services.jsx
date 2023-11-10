@@ -6,32 +6,34 @@ import CommonQuestion from "../Components/CommonQuestion";
 const Services = () => {
   return (
     <>
-      <div className="h-full w-full">
+      <div className=" w-screen ">
         <div
-          className="main-info h-[100vh] w-full p-3 bg-cover sm:bg-cover bg-center sm:bg-center"
+          className="main-info md:flex h-full w-full md:p-1 p-3  md:bg-cover sm:bg-cover bg-contain lg:bg-cover bg-no-repeat  bg-top lg:bg-center md:bg-center sm:bg-center"
           style={{
             backgroundImage:
               'url("https://twomaidscleaning.com/_next/image/?url=https%3A%2F%2Fres.cloudinary.com%2Ftwomaidsengi%2Fimage%2Fupload%2Fc_scale%2Cq_44%2Cw_2515%2Fv1670256609%2Fhubsite-reskin%2FTwoMaids_3.jpg&w=3840&q=75")'
            
           }}
         >
-          <div className="ml-4 sm:ml-20 mt-4 sm:mt-40 w-[520px] ">
-            <h1 className="text-3xl sm:text-6xl font-bold text-[#015d9c] ">Our Services</h1>
+          <div className="sm:ml-4 ml-0 sm:mt-4 mt-[250px]  md:ml-2 lg:ml-4 flex flex-col">
+            <div className="lg:w-[520px]  md:w-[400px] sm:w-[250px] w-full">
+            <h1 className="text-3xl lg:text-6xl md:text-5xl  font-bold text-[#015d9c] ">Our Services</h1>
             {serviceinfo.map((info) => {
               return (
-                <p className=" text-base sm:text-lg break-words mt-4 sm:mt-10 text-gray-500">
+                <p className="text-sm md:text-[15px] lg:text-lg break-words sm:mt-4 text-gray-500">
                   {info}
                 </p>
               );
             })}
-            <div className="flex flex-col sm:flex-row justify-center sm:justify-evenly mt-4 sm:mt-16 ">
-              <button className="h-10 sm:w-40 text-white font-bold bg-[#015d9c] my-2 sm:my-0">
+            </div>
+            <div className="flex flex-col sm:flex-row  mt-4 md:-ml-4 sm:mt-16 ">
+              <button className="h-10 p-2 rounded sm:mr-1 md:mr-1 text-white font-bold bg-[#015d9c] my-2 sm:my-0">
                 ONE-TIME-CLEAN
               </button>
-              <button className="h-10 sm:w-48 text-white font-bold bg-[#015d9c] my-2 sm:my-0">
+              <button className="h-10 p-2 rounded text-white sm:mr-1 md:mr-1 font-bold bg-[#015d9c] my-2 sm:my-0">
                 RECURRING CLEAN
               </button>
-              <button className="h-10 sm:w-48 text-white font-bold bg-pink-600 my-2 sm:my-0">
+              <button className="h-10 p-2 rounded text-white font-bold bg-[#015d9c] my-2 sm:my-0">
                 COMMON QUESTION
               </button>
             </div>

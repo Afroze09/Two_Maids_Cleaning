@@ -6,6 +6,7 @@ module.exports = {
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
+    
     extend: {
         textColor: {
                 pink: '#cf2680'
