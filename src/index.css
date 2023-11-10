@@ -221,11 +221,7 @@ input[type="radio"]:active {
 ul {
   padding-left: 0 !important;
 }
-@media (min-width: 640px) and (max-width:1024px) {
-  .drop {
-    left: -22px !important;
-  }
-}
+
 button {
   /* Your styling properties here */
   font-size: 14px !important;
