@@ -20,7 +20,7 @@ const Questions = () => {
                                     className="border-b px-2 h-[65px] flex flex-col justify-center border-[#9f9f9d]"
                                 >
                                     <div className="flex justify-between items-center">
-                                        <h1 className="text-[#cf2680] text-2xl text-left font-semibold">
+                                        <h1 className="text-[#015d9c] text-2xl text-left font-semibold">
                                             {r.question}
                                         </h1>
                                         <button
@@ -46,8 +46,6 @@ const Questions = () => {
                 </div>
             </div>
             
-            );
-        </div>
     );
     
 }

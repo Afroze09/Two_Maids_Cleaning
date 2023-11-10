@@ -244,32 +244,23 @@ button:hover {
     padding-right: 8px !important;
   }
   .footer{
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: 12px !important;
+    padding-left: 12px !important;
   }
-}
-
-@media screen and (max-width:640px) {
   .ourservices{
     padding-left: 8px !important;
     padding-right: 8px !important;
   }
-  .footer{
-    padding-right: 12px;
-    padding-left: 12px;
-  }
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .main-info {
+    /* background-size: 80%; */
+    background-image: url(./Images/model.png);
     background-size: cover;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .main-info {
-    background-size: 80%;
+    height: 500px !important;
+    background-position: left;
   }
 }
 @media (min-width: 1025px) {

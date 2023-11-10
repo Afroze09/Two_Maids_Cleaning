@@ -14,7 +14,7 @@ export const data = [
     {
         id : 1,
         title:'One-Time Clean',
-        bg:'bg-[#f9ddeb]',
+        bg:'bg-[#a0dcff]',
     },
     {
         id : 2,
