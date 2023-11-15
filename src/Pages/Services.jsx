@@ -3,6 +3,7 @@ import OneTime from "../Components/OneTime";
 import { serviceinfo} from "../data"
 import Recurring from "../Components/Recurring";
 import CommonQuestion from "../Components/CommonQuestion";
+import Modal from "../Components/Modal";
 const Services = () => {
   return (
     <>
@@ -46,6 +47,7 @@ const Services = () => {
         <CommonQuestion/>
       </div>
       <div className=" w-full"></div>
+      <Modal />
     </>
   );
 };
