@@ -80,10 +80,10 @@ export default function CustomFooter() {
             <Link className="text-white no-underline">Locations</Link>
             <Link className="text-white no-underline">Services</Link>
             <Link className="text-white no-underline">
-              Franchise Opportunities
+              Join Our Team
             </Link>
             <Link className="text-white no-underline">Why Two Maids</Link>
-            <Link className="text-white no-underline">Careers</Link>
+            {/* <Link className="text-white no-underline">Careers</Link> */}
             <Link className="text-white no-underline">About</Link>
             <Link className="text-white no-underline">FAQS</Link>
             <Link className="text-white no-underline">Reviews</Link>
