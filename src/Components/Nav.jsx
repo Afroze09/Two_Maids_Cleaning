@@ -8,12 +8,13 @@ function Nav() {
     <section className="px-0 md:px-2 sm:px-2 lg:px-4 lg:flex-col flex flex-col-reverse md:flex-col-reverse w-screen sm:w-screen  md:w-screen lg:w-screen">
       <nav className=" h-[40px] flex w-full items-center mt-3 " id="navbar">
         <div className="font-semibold w-full h-full text-gray-600 flex items-center justify-between">
-          <div className="text-md flex items-center h-full  md:h-full lg:w-auto  md:w-full w-full p-3 md:px-4 bg-[#a0dcff] md:bg-[#a0dcff] sm:bg-[#a0dcff] lg:bg-transparent gap-x-2">
+          {/* <div className="text-md flex items-center h-full  md:h-full lg:w-auto  md:w-full w-full p-3 md:px-4 bg-[#a0dcff] md:bg-[#a0dcff] sm:bg-[#a0dcff] lg:bg-transparent gap-x-2">
+          {/* <div className="text-md flex items-center h-full  md:h-full lg:w-auto  md:w-full w-full p-3 md:px-4 bg-[#a0dcff] md:bg-[#a0dcff] sm:bg-[#a0dcff] lg:bg-transparent sm:bg-transparent gap-x-2">
             <span>Your store </span>
             <Link className="text-[#015d9c] font-bold no-underline">
               CHESTERFIELD
             </Link>
-          </div>
+          </div> */}
           <div className="h-full text-md hidden sm:hidden md:hidden lg:block ">
             <span className="mr-2">
               Call for a Free Estimate!{" "}
@@ -31,7 +32,7 @@ function Nav() {
         <Navbar.Brand as={Link} to={'/'}>
           <img
             src={logo}
-            className="mr-3 sm:h-16 h-20"
+            className="mr-3 sm:h-16 h-24"
             alt=" Logo"
           />
         </Navbar.Brand>
@@ -40,7 +41,11 @@ function Nav() {
           <Navbar.Link as={Link}  id='nav' className='no-underline text-sm sm:text-[#75757a] sm:text-sm md:text-sm font-semibold md:text-[#75757a] hover:text-white sm:hover:text-[#015d9c] hover:bg-[#015d9c] sm:hover:bg-transparent md:hover:bg-transparent' to={"/services"}>
             Services
           </Navbar.Link>
-          <Navbar.Link id='nav' className='no-underline text-sm sm:text-[#75757a] sm:text-sm md:text-sm font-semibold md:text-[#75757a] hover:text-white sm:hover:text-[#015d9c] hover:bg-[#015d9c] sm:hover:bg-transparent md:hover:bg-transparent' as={Link} to="#">
+          {/* <Navbar.Link id='nav' className='no-underline text-sm sm:text-[#75757a] sm:text-sm md:text-sm font-semibold md:text-[#75757a] hover:text-white sm:hover:text-[#015d9c] hover:bg-[#015d9c] sm:hover:bg-transparent md:hover:bg-transparent' as={Link} to="#"> */}
+          <Navbar.Link as={Link} className='no-underline text-sm sm:text-[#75757a] sm:text-sm md:text-sm font-semibold md:text-[#75757a]  sm:hover:text-[#015d9c] hover:bg-[#015d9c] ' to={"/services"}>
+            Services
+          </Navbar.Link>
+          <Navbar.Link className='no-underline text-sm sm:text-[#75757a] sm:text-sm md:text-sm font-semibold md:text-[#75757a] hover:text-[#015d9c] sm:hover:text-[#015d9c] hover:bg-[#015d9c] ' as={Link} to="#">
             Locations
           </Navbar.Link>
           <Navbar.Link id='nav' as={Link} className='no-underline text-sm sm:text-[#75757a] sm:text-sm md:text-sm font-semibold md:text-[#75757a] hover:text-white sm:hover:text-[#015d9c] hover:bg-[#015d9c] sm:hover:bg-transparent md:hover:bg-transparent' to="#">
@@ -64,6 +69,18 @@ function Nav() {
             </Dropdown.Item>
             <Dropdown.Item as={Link} id='drop-item' className='no-underline text-sm sm:text-[#75757a] sm:text-sm md:text-sm font-semibold md:text-[#75757a] '>Contact Us</Dropdown.Item>
           </Dropdown>
+          <Navbar.Link as={Link} className='no-underline text-sm sm:text-[#75757a] sm:text-sm md:text-sm font-semibold md:text-[#75757a] hover:text-white sm:hover:text-[#015d9c] hover:bg-[#015d9c] sm:hover:bg-transparent md:hover:bg-transparent' to="#">
+            Join our Team
+          </Navbar.Link>
+          <Navbar.Link as={Link} className='no-underline text-sm sm:text-[#75757a] sm:text-sm md:text-sm font-semibold md:text-[#75757a] hover:text-white sm:hover:text-[#015d9c] hover:bg-[#015d9c] sm:hover:bg-transparent md:hover:bg-transparent' to="#">
+            About
+          </Navbar.Link>
+          <Navbar.Link as={Link} className='no-underline text-sm sm:text-[#75757a] sm:text-sm md:text-sm font-semibold md:text-[#75757a] hover:bg-[#015d9c] sm:hover:bg-transparent md:hover:bg-transparent' to="#">
+            Reviews
+          </Navbar.Link>
+          <Navbar.Link as={Link} className='no-underline text-sm sm:text-[#75757a] sm:text-sm md:text-sm font-semibold md:text-[#75757a] sm:hover:bg-transparent md:hover:bg-transparent' to="#">
+            Contact Us
+          </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
       </nav>
