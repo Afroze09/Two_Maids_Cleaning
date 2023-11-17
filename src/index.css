@@ -116,10 +116,16 @@ code {
   color: white !important;
 }
 
-.dropdown-item:active,
-.dropdown-active {
-  background: #015d9c !important;
+#drop-item:active{
+  background-color: #015d9c !important;
+  color: white !important;
 }
+#drop-item:hover{
+  background-color: #015d9c !important;
+  color: white !important;
+}
+
+
 .carousel-control-prev {
   margin-left: -30px !important;
   color: #015d9c !important;
@@ -247,6 +253,14 @@ button:hover {
     padding-left: 8px !important;
     padding-right: 8px !important;
   }
+  .photo-circle{
+    height: 225px !important;
+    width: 225px !important;
+  }
+  .photos{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 }
 
 
@@ -259,7 +273,7 @@ button:hover {
     background-position: left;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .main-info {
     background-size: 100%;
   }
@@ -270,3 +284,22 @@ button:hover {
    
   }
 }
+
+@media (min-width:640px)and (max-width:1440px){
+  .drop{
+    left: -22px !important;
+  }
+  #nav:hover {
+    color: #015d9c ;
+  }
+  #nav:active{
+    color:#015d9c!important;
+  }
+  
+  }
+  @media (min-width:640px)and (max-width:1023px){
+    .photo-circle{
+      height: 300px;
+      width: 300px;
+    }
+  }

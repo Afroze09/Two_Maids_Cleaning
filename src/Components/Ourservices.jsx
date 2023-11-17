@@ -73,7 +73,7 @@ export default function Ourservices() {
             })}
           </div>
           <div className="flex items-center justify-center text-center mb-5">
-            <Link className="no-underline">
+            <Link to={'/services'} className="no-underline">
               <button className=" pink-btn font-extrabold  p-2 w-64">
                 VIEW OUR SERVICES
               </button>
