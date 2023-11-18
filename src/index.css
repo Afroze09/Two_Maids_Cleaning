@@ -218,8 +218,8 @@ input[type="radio"]:active {
 }
 .using {
   color: #015d9c;
-  text-decoration: underline;
-  line-height: 27px;
+  line-height: 27
+  px;
 }
 .drop {
   left: 0px !important;

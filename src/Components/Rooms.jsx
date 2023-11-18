@@ -31,7 +31,7 @@ const roomDetails = rooms.map(v=>v.details)
                     aria-expanded={visibleButtons[r.id]}
                     className="using"
                   >
-                    &times;
+                <i className="fi fi-rs-angle-circle-down ml-5 text-2xl text-[#015d9c] font-semibold cursor-pointer" />
                   </button>
                 </div>
               </div>
