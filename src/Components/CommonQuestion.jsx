@@ -16,9 +16,9 @@ const CommonQuestion = () => {
     return (
       <div className="flex w-full flex-col overflow-x-hidden">
         <div
-          className={`${data[2].bg} h-12 flex  items-center justify-center  w-full`}
+          className={`${data[2].bg} h-12 flex sm:max-md:h-16 md:max-lg:h-20 lg:max-xl:h-24 items-center justify-center  w-full`}
         >
-          <h1 className="text-[#015d9c] text-lg  text-center font-semibold">
+          <h1 className="text-[#015d9c] text-[18px] sm:max-md:text-[21px] md:max-lg:text-[24px] text-center font-semibold">
             {data[2].title}
           </h1>
           <button
@@ -27,11 +27,11 @@ const CommonQuestion = () => {
             aria-expanded={open}
             className="down"
           >
-            <i className="fi fi-rs-angle-circle-down ml-5 text-lg text-[#015d9c] font-semibold cursor-pointer" />
+            <i className="fi fi-rs-angle-circle-down ml-5 text-[18px] sm:max-md:text-[21px] md:max-lg:text-[24px] text-[#015d9c] font-semibold cursor-pointer" />
           </button>
         </div>
-        <Collapse in={open} className="h-full">
-          <div className={`${data[2].bg} text-center h-full w-full px-[10px]`}>
+        <Collapse in={open} className="">
+          <div className={`${data[2].bg} text-center w-full px-[14px]`}>
             {/* <div className="flex flex-col  w-full ">
               <div className="flex items-center font-semibold justify-evenly w-full ">
                 <button

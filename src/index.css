@@ -245,7 +245,6 @@ ul {
 
 button {
   /* Your styling properties here */
-  font-size: 14px !important;
   font-weight: 500 !important;
   color: #015d9c !important;
   padding-left: 10px !important;
@@ -285,26 +284,6 @@ button:hover {
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .main-info {
-    /* background-size: 80%; */
-    background-image: url(./Images/model.png);
-    background-size: cover;
-    height: 500px !important;
-    background-position: left;
-  }
-}
-@media (min-width: 1024px) {
-  .main-info {
-    background-size: 100%;
-  }
-}
-@media (max-width: 320px) {
-  .main-info {
-    background-size: 100%;
-   
-  }
-}
 
 @media (min-width:640px)and (max-width:1440px){
   .drop{
@@ -316,12 +295,7 @@ button:hover {
   #nav:active{
     color:#015d9c!important;
   }
-  .service_btn{
-    color: white !important;
-    font-weight: 700 !important;
-    background-color: #015d9c !important;
-    border-radius: 10px;
-  }
+  
   
   }
   @media (min-width:640px)and (max-width:1023px){
@@ -330,3 +304,35 @@ button:hover {
       width: 300px;
     }
   }
+@media screen and (max-width:425px){
+  #btn{
+    font-size: 12px !important;
+  }
+}
+@media (min-width:426px) and (max-width:768px) {
+  .service_btn{
+    color: white !important;
+    font-size: 11px !important; 
+    font-weight: bold !important;
+    background-color: #015d9c !important;
+    border-radius: 10px;
+  }
+  #btn{
+    font-size: 18px !important;
+  }
+  }
+@media (min-width: 769px) and (max-width:1024px) {
+  .service_btn{
+    color: white !important;
+    font-size: 15px !important; 
+    font-weight: 500 !important;
+    background-color: #015d9c !important;
+    border-radius: 10px;
+  }
+ 
+}
+@media (min-width: 1025px) and (max-width: 1440){
+  button{
+    font-size: 20px !important;
+  }
+}

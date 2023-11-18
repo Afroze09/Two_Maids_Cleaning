@@ -19,10 +19,10 @@ const roomDetails = rooms.map(v=>v.details)
             <>
               <div
                 key={r.id}
-                className="border-b h-[45px] flex flex-col justify-center border-[#9f9f9d]"
+                className="border-b h-[45px] xl:max-xxl:h-[65px] flex flex-col justify-center border-[#9f9f9d]"
               >
                 <div className="flex justify-between items-center">
-                  <h1 className="text-[#015d9c] text-[17px] text-left font-semibold">
+                  <h1 className="text-[#015d9c] text-[14px] sm:max-md:text-[16px] md:max-lg:text-[18px] lg:max-xl:text-[20px] xl:max-xxl:text-[22px] text-left font-semibold">
                     {r.title}
                   </h1>
                   <button
@@ -31,7 +31,7 @@ const roomDetails = rooms.map(v=>v.details)
                     aria-expanded={visibleButtons[r.id]}
                     className="using"
                   >
-                <i className="fi fi-rs-angle-circle-down  text-[17px] text-[#015d9c] font-semibold cursor-pointer" />
+                <i className="fi fi-rs-angle-circle-down  text-[14px] sm:max-md:text-[16px] md:max-lg:text-[18px] lg:max-xl:text-[20px] xl:max-xxl:text-[22px] text-[#015d9c] font-semibold cursor-pointer" />
                   </button>
                 </div>
               </div>
@@ -39,7 +39,7 @@ const roomDetails = rooms.map(v=>v.details)
                 <div className="kitchen-data  px-2 py-2">
                   
                  
-                        <ul className="list-disc grid gap-x-8 ml-4 text-xs text-left grid-cols-3">
+                        <ul className="list-disc grid gap-x-8 ml-4 text-[10px] sm:max-md:text-[12px] md:max-lg:text-[14px] lg:max-xl:text-[16px] xl:max-xxl:text-[18px] text-left grid-cols-3">
                           {
                             roomDetails[0].map((item,index) =>{
                               return(

@@ -15,11 +15,11 @@ const OneTime = () => {
     setVisibleC(buttonIndex === 2);
   };
   return (
-    <div className="flex w-full flex-col overflow-x-hidden ">
+    <div className="flex w-screen overflow-x-hidden flex-col">
       <div
-        className={`${data[0].bg} h-12 flex  items-center justify-center  w-full`}
+        className={`${data[0].bg} h-12 sm:max-md:h-16 md:max-lg:h-20 lg:max-xl:h-24 flex  items-center justify-center  w-full`}
       >
-        <h1 className="text-[#015d9c] text-lg  text-center font-semibold">
+        <h1 className="text-[#015d9c] text-[18px] sm:max-md:text-[21px] md:max-lg:text-[24px] text-center font-semibold">
           {data[0].title}
         </h1>
         <button
@@ -28,18 +28,18 @@ const OneTime = () => {
           aria-expanded={open}
           className="down"
         >
-          <i className="fi fi-rs-angle-circle-down ml-5 text-lg text-[#015d9c] font-semibold cursor-pointer" />
+          <i className="fi fi-rs-angle-circle-down ml-5 text-[18px] sm:max-md:text-[21px] md:max-lg:text-[24px] text-[#015d9c] font-semibold cursor-pointer" />
         </button>
       </div>
-      <Collapse in={open} className="h-full">
-        <div className={`${data[0].bg} text-center h-full w-full px-[10px]`}>
+      <Collapse in={open} className=" w-full">
+        <div className={`${data[0].bg} text-center w-full  px-[14px]`}>
           <div className="flex flex-col  w-full ">
-            <div className="flex items-center  font-semibold justify-evenly w-full ">
+            <div className="flex items-center font-bold  mb-2 justify-between sm:max-xxl:justify-evenly  w-full ">
               <button
                 onClick={() => handleButtonClick(0) ? 'using':''}
                 aria-controls="example-collapse-text"
                 aria-expanded={visibleA}
-                className="text-[15px]"
+                className="text-[14px] sm:max-md:text-[16px] md:max-lg:text-[18px]"
               >
                 {title[0].title}
               </button>
@@ -47,6 +47,7 @@ const OneTime = () => {
                 onClick={() => handleButtonClick(1)}
                 aria-controls="example-collapse-text"
                 aria-expanded={visibleB}
+                className="text-[14px] sm:max-md:text-[16px] md:max-lg:text-[18px]"
               >
                 {title[1].title}
               </button>
@@ -54,11 +55,12 @@ const OneTime = () => {
                 onClick={() => handleButtonClick(2)}
                 aria-controls="example-collapse-text"
                 aria-expanded={visibleC}
+                className="text-[14px] sm:max-md:text-[16px] md:max-lg:text-[18px]"
               >
                 {title[2].title}
               </button>
             </div>
-            <div className="px-[2px] text-sm flex items-center justify-center text-justify my-2">
+            <div className="px-[2px] text-[12px] sm:max-md:text-[14px] md:max-lg:text-[16px] flex items-center justify-center text-justify mx-2">
               <Collapse in={visibleA}>
                 <p>{title[0].desc}</p>
               </Collapse>
