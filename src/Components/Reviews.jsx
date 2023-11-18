@@ -16,7 +16,7 @@ export default function Reviews() {
   }
 
   return (
-    <div className="w-screen bg-[#a0dcff] sm:px-0  px-4">
+    <div className="w-screen bg-[#a0dcff] sm:px-0  px-4 overflow-x-hidden">
       <h1 className="pt-5 text-center text-[#015d9c] mb-10 text-4xl sm:text-5xl">
         A Few Kind Words
       </h1>

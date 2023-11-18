@@ -24,7 +24,7 @@ export default function Ourservices() {
   });
 
   return (
-    <section className="py-12 lg:px-[250px] md:px-[60px] h-full w-screen ourservices mt-3">
+    <section className="py-12 lg:px-[250px] md:px-[60px] h-full w-screen ourservices mt-3 overflow-x-hidden">
       <div className="w-full mb-5">
         <h1 className="sm:text-7xl lg:text-7xl text-5xl text-left font-bold font-[TiemposFine]  mb-5 text-[#015d9c] ">
           <span className="sm:inline md:hidden lg:inline hidden mb-5">

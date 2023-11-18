@@ -43,7 +43,7 @@ export default function Modal() {
     <div
       className={`sm:h-[100px] lg:h-[100px] md:h-[180px] h-[150px] w-screen bg-[#58c2ff] flex items-center fixed bottom-0 left-0 z-10 py-2 px-10 ${
         modalVisible ? "translate-y-0" : "translate-y-full"
-      } transition-transform duration-300 ease-in-out transform`}
+      } transition-transform duration-300 ease-in-out transform overflow-x-hidden`}
     >
       {(isMobile || isTablet) ? (
         <div className="flex flex-col items-center justify-evenly h-full w-full">

@@ -12,7 +12,7 @@ const Rooms = () => {
   };
 const roomDetails = rooms.map(v=>v.details)
   return (
-    <div className="px-[100px] w-full">
+    <div className="px-[100px] w-full overflow-x-hidden">
       <div className="border-t border-[#9f9f9d]">
         {rooms.map((r) => {
           return (
