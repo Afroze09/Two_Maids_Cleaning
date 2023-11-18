@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import EventButton from "./EventButton";
 import { useState,useEffect } from "react";
+import { BsFacebook, BsGoogle } from 'react-icons/bs';
 export default function CustomFooter() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [isTablet , setTablet] = useState(window.innerWidth<1024);
@@ -19,9 +20,9 @@ export default function CustomFooter() {
     };
   }, []);
   return (
-    <footer className="w-screen" >
+    <footer className="w-screen overflow-x-hidden" >
       <div
-        className="bg-[#a0dcff] sm:h-[30vh] h-[15vh]  w-full flex items-center justify-center "
+        className="bg-[#a0dcff] sm:h-[20vh] h-[10vh]  w-full flex items-center justify-center "
         style={{
           backgroundImage:
             'url("https://res.cloudinary.com/twomaidsengi/image/upload/c_scale,q_auto,w_1920/v1670256573/hubsite-reskin/opaque-dots.webp ")',
@@ -30,11 +31,11 @@ export default function CustomFooter() {
           backgroundRepeat: "no-repeat",
         }}
       >
-       <h1 className="lg:text-9xl text-5xl md:text-7xl md:text-start text-center  font-normal lg:text-center text-[#015d9c] ">
+       <h1 className="text-6xl  md:text-start text-center  font-normal lg:text-center text-[#015d9c] ">
         Let Life Shine
       </h1>
       </div>
-      <div className="bg-[#015d9c] lg:overflow-hidden relative footer text-white lg:h-[85vh]  w-full lg:py-2 py-10 md:py-20  lg:px-[100px]   ">
+      <div className="bg-[#015d9c] lg:overflow-hidden relative footer text-white  w-full lg:py-2 py-10 md:py-20  lg:px-[100px]   ">
         <div className="footer-circle hidden lg:block"></div>
         <div className="footer-circle-two hidden lg:block"></div>
         {(isMobile || isTablet) ? (
@@ -66,7 +67,7 @@ export default function CustomFooter() {
       )}
         
         <hr className="font-extrabold opacity-100  h-1 text-[#a0dcff]  text-lg" />
-        <div className="flex  w-full py-5 lg:py-[90px] lg:mb-0 mb-2 ">
+        <div className="flex  w-full py-5 lg:py-[10px] lg:mb-0 mb-2 ">
           <div className="mr-5 hidden lg:block">
           <Link className="text-2xl no-underline mb-4 text-white font-bold">KILLER CLEAN.ORG</Link>
           <h4 className="text-sm font-extrabold  mb-3">
@@ -82,28 +83,28 @@ export default function CustomFooter() {
             <Link className="text-white no-underline">
               Join Our Team
             </Link>
-            <Link className="text-white no-underline">Why Two Maids</Link>
+            {/* <Link className="text-white no-underline">Why Two Maids</Link> */}
             {/* <Link className="text-white no-underline">Careers</Link> */}
             <Link className="text-white no-underline">About</Link>
-            <Link className="text-white no-underline">FAQS</Link>
+            {/* <Link className="text-white no-underline">FAQS</Link> */}
             <Link className="text-white no-underline">Reviews</Link>
-            <Link className="text-white no-underline">
+            {/* <Link className="text-white no-underline">
               Cleaning for a Reason
             </Link>
             <Link className="text-white no-underline">
               Terms and Conditions
-            </Link>
+            </Link> */}
             <Link className="text-white no-underline">Privacy Policy</Link>
             <Link className="text-white no-underline">
               Privacy Policy for CA Residents
             </Link>
-            <Link className="text-white no-underline">Accessibility</Link>
+            {/* <Link className="text-white no-underline">Accessibility</Link> */}
             <Link className="text-white no-underline">Contact Us</Link>
             <Link className="text-white no-underline ">
               <ul className="p-0">
-                <li className="flex items-center justify-start">
-                {/* //   <BsFacebook className="mr-5" />
-                //   <BsGoogle /> */}
+                <li className="flex items-center justify-center">
+                  <BsFacebook className="mr-5" />
+                  <BsGoogle />
                 </li>
               </ul>
             </Link>

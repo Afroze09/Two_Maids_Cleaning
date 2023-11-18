@@ -20,7 +20,7 @@ export default function CustomCarousel() {
     };
   }, []);
   return (
-    <div className="relative w-screen sm:h-[90vh] md:h-[65vh] lg:h-[90vh] h-[70vh]">
+    <div className="relative w-screen sm:h-[90vh] md:h-[65vh] lg:h-[90vh] h-[70vh] overflow-x-hidden">
       <Carousel controls={false} indicators={false} className="">
         {corouselImg.map((v,index) => {
           return (

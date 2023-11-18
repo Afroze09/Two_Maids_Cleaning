@@ -3,7 +3,8 @@ import Modal from '../Components/Modal'
 
 export default function Contact() {
   return (
-    <div>Contact
+    <div className='overflow-x-hidden'>
+      Contact
         <Modal />
     </div>
   )

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 export default function Home() {
   return (
     <div>
-    <section className='sm:h-[90vh] h-[75vh] w-screen'>
+    <section className='sm:h-[90vh] h-[75vh] w-screen overflow-x-hidden'>
       <div className='bg-[#015d9c] h-full flex flex-col justify-evenly items-center px-2 py-10 sm:px-28 md:px-28 sm:py-20 md:py-20 text-white'>
         <div>
         <h1 className='sm:text-6xl text-4xl font-bold mb-3 tracking-widest leading-[1.2em] '>WELCOME TO THE <br /> KILLER CLEAN <br /> EXPERIENCE!</h1>

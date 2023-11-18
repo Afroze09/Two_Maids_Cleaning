@@ -10,7 +10,7 @@ const Questions = () => {
       }));
     };
             return (
-            <div className="px-[100px] w-full">
+            <div className="px-[100px] w-full overflow-x-hidden">
                 <div className="border-t border-[#9f9f9d]">
                     {Questions.map((r) => {
                         return (

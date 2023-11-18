@@ -5,8 +5,8 @@ import logo from '../Images/logo.png'
 function Nav() {
     
   return (
-    <section className="px-0 md:px-2 sm:px-2 lg:px-4 lg:flex-col flex flex-col-reverse md:flex-col-reverse w-screen sm:w-screen  md:w-screen lg:w-screen">
-      <nav className=" h-[40px] flex w-full items-center mt-3 " id="navbar">
+    <section className="px-0 md:px-2 sm:px-2 lg:px-4 lg:flex-col flex flex-col-reverse md:flex-col-reverse w-screen sm:w-screen  md:w-screen lg:w-screen overflow-x-hidden">
+      <nav className=" flex w-full items-center sm:my-2 " id="navbar">
         <div className="font-semibold w-full h-full text-gray-600 flex items-center justify-end">
           {/* <div className="text-md flex items-center h-full  md:h-full lg:w-auto  md:w-full w-full p-3 md:px-4 bg-[#a0dcff] md:bg-[#a0dcff] sm:bg-[#a0dcff] lg:bg-transparent gap-x-2">
           {/* <div className="text-md flex items-center h-full  md:h-full lg:w-auto  md:w-full w-full p-3 md:px-4 bg-[#a0dcff] md:bg-[#a0dcff] sm:bg-[#a0dcff] lg:bg-transparent sm:bg-transparent gap-x-2">
@@ -15,10 +15,10 @@ function Nav() {
               CHESTERFIELD
             </Link>
           </div> */}
-          <div className="h-full text-md hidden sm:hidden md:hidden lg:block ">
-            <span className="mr-2">
+          <div className="text-md hidden sm:hidden md:hidden lg:block ">
+            <span className="text-sm">
               Call for a Free Estimate!
-              <Link className="text-[#015d9c] font-bold no-underline mr-2">
+              <Link className="text-[#015d9c] text-sm font-bold no-underline mx-2">
                 (636) 600-4480
               </Link>
             </span> 
@@ -28,13 +28,13 @@ function Nav() {
           </div>
         </div>
       </nav>
-      <hr style={{marginTop:'20px',marginBottom:'0'}} className='hidden sm:hidden lg:block md:hidden'/>
-      <nav className="w-full lg:w-full lg:px-2 ">
-      <Navbar fluid rounded>
+      <hr style={{marginTop:'3px',marginBottom:'-3px'}} className='hidden sm:hidden lg:block md:hidden'/>
+      <nav className="w-full lg:w-full ">
+      <Navbar fluid className="py-0">
         <Navbar.Brand as={Link} to={'/'}>
           <img
             src={logo}
-            className="mr-3 sm:h-16 h-24"
+            className="mr-3 sm:h-24 h-24"
             alt=" Logo"
           />
         </Navbar.Brand>

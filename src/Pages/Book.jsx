@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { objectArray } from "../data";
 const ProgressCheck = ({ step,setStep }) => {
   return (
-    <div className="flex justify-between text-xl relative">
+    <div className="flex justify-between text-xl relative overflow-x-hidden">
       <div className="w-32 flex flex-col z-50 items-center text-center">
         Contact
         <br />

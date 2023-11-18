@@ -8,7 +8,7 @@ import img from "../Images/service-bg-img.png"
 const Services = () => {
   return (
     <>
-      <div className=" h-full w-full ">
+      <div className=" h-full w-full overflow-x-hidden">
         <div
           className="main-info md:flex h-full w-full md:p-1 p-3  md:bg-cover sm:bg-cover bg-contain lg:bg-cover bg-no-repeat  bg-top lg:bg-center md:bg-center sm:bg-center"
           style={{

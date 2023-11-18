@@ -152,8 +152,8 @@ code {
 .footer-circle {
   position: absolute;
   background-color: #a0dcff;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   border-radius: 50%;
   top: -200px;
   right: 125px;
@@ -164,8 +164,8 @@ code {
 .footer-circle-two {
   position: absolute;
   background-color: #a0dcff;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   border-radius: 50%;
   bottom: -50%;
   right: 125px;
@@ -239,6 +239,11 @@ button {
 button:hover {
   color: #015d9c;
 }
+
+/* #nav{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+} */
 
 @media screen and (max-width:640px) {
   .ourservices{

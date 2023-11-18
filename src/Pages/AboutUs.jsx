@@ -3,7 +3,7 @@ import Modal from "../Components/Modal";
 import { aboutUs, chesterfield } from "../utils";
 const AboutUs = () => {
   return (
-    <section className="bg-transparent w-screen relative pt-3 overflow-x-hidden mt-5">
+    <section className="bg-transparent w-screen relative pt-3 overflow-x-hidden mt-5 overflow-x-hidden">
       <div className="bg-dots"></div>
       <div className=" flex xl:px-[225px] lg:px-[225px] md:px-[70px] sm:px-2 px-2 flex-wrap">
         <div className=" lg:px-[50px] ">

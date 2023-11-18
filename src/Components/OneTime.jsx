@@ -15,7 +15,7 @@ const OneTime = () => {
     setVisibleC(buttonIndex === 2);
   };
   return (
-    <div className="flex w-full flex-col ">
+    <div className="flex w-full flex-col overflow-x-hidden ">
       <div
         className={`${data[0].bg} h-24 flex  items-center justify-center  w-full`}
       >

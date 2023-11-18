@@ -14,7 +14,7 @@ const Recurring = () => {
     setVisibleB(buttonIndex === 4);
   };
   return (
-    <div className="flex w-full flex-col ">
+    <div className="flex w-full flex-col overflow-x-hidden">
       <div
         className={`${data[1].bg} h-24 flex  items-center justify-center  w-full`}
       >

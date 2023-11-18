@@ -24,9 +24,9 @@ export default function Ourservices() {
   });
 
   return (
-    <section className="py-12 lg:px-[250px] md:px-[60px] h-full w-screen ourservices mt-3">
+    <section className="py-12 lg:px-[200px] md:px-[60px] h-full w-screen ourservices mt-3 overflow-x-hidden">
       <div className="w-full mb-5">
-        <h1 className="sm:text-7xl lg:text-7xl text-5xl text-left font-bold font-[TiemposFine]  mb-5 text-[#015d9c] ">
+        <h1 className="sm:text-[58px] lg:text-[58px] text-5xl text-left font-bold font-[TiemposFine]  mb-5 text-[#015d9c] ">
           <span className="sm:inline md:hidden lg:inline hidden mb-5">
             Your day just got a <br /> whole lot 
           </span>
@@ -34,9 +34,9 @@ export default function Ourservices() {
           <span className="sm:hidden md:block lg:hidden block mb-2 md:text-6xl text-5xl">
             got a whole lot
           </span>
-          <span className="sm:ml-4 lg:ml-4 lg:text-7xl  md:text-6xl md:ml-0">{rotatingWords[currentWordIndex]}</span>.
+          <span className="sm:ml-4 lg:ml-4 lg:text-[58px] md:text-[58px] md:ml-0">{rotatingWords[currentWordIndex]}</span>.
         </h1>
-        <p className="sm:text-[27px] lg:text-[27px] md:text-lg text-lg text-left lg:tracking-[0.07em]  sm:tracking-[0.07em] text-[#7b6c73] leading-9">
+        <p className="sm:text-[27px] lg:text-[27px] md:text-lg text-lg text-left lg:tracking-[0.02em]  sm:tracking-[0.07em] text-[#7b6c73] leading-9">
           Let Two Maids do all of the dirty work for you. Focus on everything
           else you need to get done and schedule a cleaning with us today.
         </p>
@@ -54,7 +54,7 @@ export default function Ourservices() {
           do makes lives a little easier and homes a little brighter.
         </p>
         <div className="bg-[#a0dcff] sm:bg-transparent flex flex-col items-center justify-center py-4 sm:py-0">
-          <div className="sm:grid lg:grid sm:grid-cols-3 lg:grid-cols-3 md:grid md:grid-cols-3 flex flex-col items-center sm:gap-7 lg:gap-7 lg:h-[260px] sm:h-[260px] md:gap-x-6 md:h-[260px] w-full mb-4">
+          <div className="sm:grid lg:grid sm:grid-cols-3 lg:grid-cols-3 md:grid md:grid-cols-3 flex flex-col items-center sm:gap-7 lg:gap-32 lg:h-[260px] sm:h-[260px] md:gap-x-6 md:h-[260px] w-full mb-4">
             {services.map((v) => {
               return (
                 <div
