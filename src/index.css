@@ -74,6 +74,21 @@ code {
   background: #015d9c !important;
   color: white !important;
 }
+
+.footer-btn {
+  height: 35px !important;
+  width: 250px !important;  
+  font-size: 18px !important;
+  background: white !important;
+  color: #015d9c !important;
+  border: 2px white solid !important;
+  border-radius: 10px  !important;
+  font-weight: 600 !important;
+}
+.footer-btn:hover {
+  background: #015d9c !important;
+  color: white !important;
+}
 #learn {
   padding-top: 10px;
   height: 60px;
@@ -102,7 +117,7 @@ code {
 }
 
 .modal-btn{
-  height: 40px;
+  height: 25px;
   text-align: center;
   width: auto;
   font-size: 12px !important;
@@ -152,8 +167,8 @@ code {
 .footer-circle {
   position: absolute;
   background-color: #a0dcff;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   border-radius: 50%;
   top: -200px;
   right: 125px;
@@ -164,8 +179,8 @@ code {
 .footer-circle-two {
   position: absolute;
   background-color: #a0dcff;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   border-radius: 50%;
   bottom: -50%;
   right: 125px;
@@ -218,8 +233,8 @@ input[type="radio"]:active {
 }
 .using {
   color: #015d9c;
-  line-height: 27
-  px;
+  line-height: 27px;
+  font-size: 16px !important;
 }
 .drop {
   left: 0px !important;
@@ -231,7 +246,7 @@ ul {
 button {
   /* Your styling properties here */
   font-size: 14px !important;
-  font-weight: 700 !important;
+  font-weight: 500 !important;
   color: #015d9c !important;
   padding-left: 10px !important;
   /* Add any other styling properties you need */
@@ -239,11 +254,6 @@ button {
 button:hover {
   color: #015d9c;
 }
-
-/* #nav{
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-} */
 
 @media screen and (max-width:640px) {
   .ourservices{
@@ -265,6 +275,12 @@ button:hover {
   .photos{
     padding-left: 10px !important;
     padding-right: 10px !important;
+  }
+  .service_btn{
+    color: white !important;
+    font-weight: 500 !important;
+    background-color: #015d9c !important;
+    border-radius: 10px;
   }
 }
 
@@ -299,6 +315,12 @@ button:hover {
   }
   #nav:active{
     color:#015d9c!important;
+  }
+  .service_btn{
+    color: white !important;
+    font-weight: 700 !important;
+    background-color: #015d9c !important;
+    border-radius: 10px;
   }
   
   }

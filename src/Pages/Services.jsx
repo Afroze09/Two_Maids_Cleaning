@@ -28,21 +28,22 @@ const Services = () => {
               );
             })}
             </div>
-            <div className="flex flex-col sm:flex-row  mt-4 lg:ml-0 md:-ml-4 sm:mt-16 ">
-              <button className="h-10 p-2 rounded sm:mr-1 md:mr-1 text-white font-bold bg-[#015d9c] my-2 sm:my-0">
+            <div className="flex flex-col sm:flex-row items-center mt-2 lg:ml-0 md:-ml-4 sm:mt-16 ">
+              <button className="service_btn h-10 w-72 p-2 sm:mr-1 md:mr-1  my-2 sm:my-0">
                 ONE-TIME-CLEAN
               </button>
-              <button className="h-10 p-2 rounded text-white sm:mr-1 md:mr-1 font-bold bg-[#015d9c] my-2 sm:my-0">
+              <button className="service_btn h-10 w-72 p-2 sm:mr-1 md:mr-1   my-2 sm:my-0">
                 RECURRING CLEAN
               </button>
-              <button className="h-10 p-2 rounded text-white font-bold bg-[#015d9c] my-2 sm:my-0">
+              <button className="service_btn h-10 w-72 p-2  my-2 sm:my-0">
                 COMMON QUESTION
               </button>
+
             </div>
           </div>
         </div>
       </div>
-      <div className=" w-full">
+      <div className="flex flex-col items-center w-full">
         <OneTime />
         <Recurring/>
         <CommonQuestion/>

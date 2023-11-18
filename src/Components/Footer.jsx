@@ -22,7 +22,7 @@ export default function CustomFooter() {
   return (
     <footer className="w-screen overflow-x-hidden" >
       <div
-        className="bg-[#a0dcff] sm:h-[20vh] h-[10vh]  w-full flex items-center justify-center "
+        className="bg-[#a0dcff]  h-[10vh]  w-full flex items-center justify-center  "
         style={{
           backgroundImage:
             'url("https://res.cloudinary.com/twomaidsengi/image/upload/c_scale,q_auto,w_1920/v1670256573/hubsite-reskin/opaque-dots.webp ")',
@@ -31,25 +31,25 @@ export default function CustomFooter() {
           backgroundRepeat: "no-repeat",
         }}
       >
-       <h1 className="text-6xl  md:text-start text-center  font-normal lg:text-center text-[#015d9c] ">
+       <h1 className="text-[40px]  md:text-start text-center  font-normal lg:text-center text-[#015d9c] ">
         Let Life Shine
       </h1>
       </div>
-      <div className="bg-[#015d9c] lg:overflow-hidden relative footer text-white  w-full lg:py-2 py-10 md:py-20  lg:px-[100px]   ">
+      <div className="bg-[#015d9c] lg:overflow-hidden relative footer text-white  w-full lg:py-2 py-1 md:py-20  lg:px-[100px] overflow-x-hidden  ">
         <div className="footer-circle hidden lg:block"></div>
         <div className="footer-circle-two hidden lg:block"></div>
         {(isMobile || isTablet) ? (
-        <div className="flex flex-col items-center w-full py-10  justify-evenly">
-          <Link className="text-2xl no-underline text-white mb-4 font-bold">KILLER CLEAN.ORG</Link>
+        <div className="flex flex-col items-center w-full pt-3 pb-2 overflow-x-hidden">
+          <Link className="text-2xl no-underline text-white mb-3 font-bold">KILLER CLEAN.ORG</Link>
           <Link to="/book">
-            <button className="btn event-btn  mb-4">Book Your Cleaning </button>
+            <button className="footer-btn mb-3">Book Your Cleaning </button>
           </Link>
           <Link to="/book">
-            <button className="btn event-btn  mb-4">Calculate Your Price</button>
+            <button className="footer-btn mb-3">Calculate Your Price</button>
           </Link>
-          <div className="text-sm text-white flex flex-col items-center">
-            <span className="font-bold text-xl mb-4">Call for a Free Estimate!</span>
-            <Link className="text-white text-xl font-bold no-underline">
+          <div className=" text-white flex flex-col items-center">
+            <span className="font-semibold text-[15px] mb-2">Call for a Free Estimate!</span>
+            <Link className="text-white text-[15px] font-bold no-underline">
               (636) 600-4611
             </Link>
           </div>
@@ -66,39 +66,29 @@ export default function CustomFooter() {
         </div>
       )}
         
-        <hr className="font-extrabold opacity-100  h-1 text-[#a0dcff]  text-lg" />
-        <div className="flex  w-full py-5 lg:py-[10px] lg:mb-0 mb-2 ">
+        <hr className="font-bold opacity-100  h-1 text-[#a0dcff]  text-lg" />
+        <div className="flex  w-full py-2  lg:mb-0 mb-2 overflow-x-hidden">
           <div className="mr-5 hidden lg:block">
           <Link className="text-2xl no-underline mb-4 text-white font-bold">KILLER CLEAN.ORG</Link>
           <h4 className="text-sm font-extrabold  mb-3">
               18118 Chesterfield Airport Road Unit N Chesterfield, MO 63005
             </h4>
             <p className="text-[11px] font-bold">
-              &copy; 2023 Two Maids®. All rights reserved.
+              &copy; 2023 Killer Clean®. All rights reserved.
             </p>
           </div>
-          <div className="grid lg:grid-cols-3 grid-cols-2 lg:gap-y-3 gap-y-4 w-full gap-x-8 text-center lg:text-lg text-[16px] lg:gap-x-24 font-bold">
+          <div className="grid lg:grid-cols-3 grid-cols-2 lg:gap-y-3 gap-y-3 w-full gap-x-6 text-center lg:text-lg text-[15px] lg:gap-x-24 font-semibold overflow-x-hidden">
             <Link className="text-white no-underline">Locations</Link>
             <Link className="text-white no-underline">Services</Link>
             <Link className="text-white no-underline">
               Join Our Team
             </Link>
-            {/* <Link className="text-white no-underline">Why Two Maids</Link> */}
-            {/* <Link className="text-white no-underline">Careers</Link> */}
             <Link className="text-white no-underline">About</Link>
-            {/* <Link className="text-white no-underline">FAQS</Link> */}
             <Link className="text-white no-underline">Reviews</Link>
-            {/* <Link className="text-white no-underline">
-              Cleaning for a Reason
-            </Link>
-            <Link className="text-white no-underline">
-              Terms and Conditions
-            </Link> */}
             <Link className="text-white no-underline">Privacy Policy</Link>
             <Link className="text-white no-underline">
               Privacy Policy for CA Residents
             </Link>
-            {/* <Link className="text-white no-underline">Accessibility</Link> */}
             <Link className="text-white no-underline">Contact Us</Link>
             <Link className="text-white no-underline ">
               <ul className="p-0">
@@ -110,12 +100,12 @@ export default function CustomFooter() {
             </Link>
           </div>
         </div>
-        <div className="lg:hidden sm:block flex items-center flex-col ">
-        <h4 className="text-sm font-extrabold text-center mb-3">
+        <div className="lg:hidden flex items-center flex-col ">
+        <h4 className="text-sm font-semibold text-center mb-3">
               18118 Chesterfield Airport Road Unit N Chesterfield, MO 63005
             </h4>
-            <p className="text-[11px] text-center font-bold">
-              &copy; 2023 Two Maids®. All rights reserved.
+            <p className="text-[12px] text-center font-bold">
+              &copy; 2023 Killer Clean®. All rights reserved.
             </p>
         </div>
       </div>

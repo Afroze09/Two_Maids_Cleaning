@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Modal() {
   const [modalVisible, setModalVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  const [isTablet , setTablet] = useState(window.innerWidth<=1024);
+  const [isTablet , setTablet] = useState(window.innerWidth <=1024);
   useEffect(() => {
     // Update isMobile when the window is resized
     const handleResize = () => {
@@ -41,23 +41,23 @@ export default function Modal() {
   }, []);
   return (
     <div
-      className={`sm:h-[100px] lg:h-[100px] md:h-[180px] h-[150px] w-screen bg-[#58c2ff] flex items-center fixed bottom-0 left-0 z-10 py-2 px-10 ${
+      className={`lg:h-[100px] md:h-[150px] h-[100px] w-screen bg-[#58c2ff] flex items-center fixed bottom-0 left-0 z-10 py-2 px-10 ${
         modalVisible ? "translate-y-0" : "translate-y-full"
       } transition-transform duration-300 ease-in-out transform overflow-x-hidden`}
     >
       {(isMobile || isTablet) ? (
         <div className="flex flex-col items-center justify-evenly h-full w-full">
-          <div className="flex items-center justify-center">
+          <div className="flex items-center mt-1 justify-center">
           <Link to="/book">
-            <button className="btn modal-btn mr-3">Book Your Cleaning </button>
+            <button className=" modal-btn px-2 mr-3">Book Your Cleaning </button>
           </Link>
           <Link to="/book">
-            <button className="btn modal-btn">Calculate Your Price</button>
+            <button className=" modal-btn px-2">Calculate Your Price</button>
           </Link>
           </div>
-          <div className="text-sm  text-[#015d9c] flex flex-col items-center">
+          <div className="text-sm  text-[#015d9c] flex flex-col mt-1 items-center">
             <h1 className="font-semibold text-xs md:text-[15px]">Call for a Free Estimate!</h1>
-            <Link className="text-[#015d9c] font-bold no-underline text-2xl md:text-3xl mr-2">
+            <Link className="text-[#015d9c] font-bold no-underline text-lg  md:text-3xl mr-2">
               (636) 600-4611
             </Link>
           </div>

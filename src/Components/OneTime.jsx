@@ -17,9 +17,9 @@ const OneTime = () => {
   return (
     <div className="flex w-full flex-col overflow-x-hidden ">
       <div
-        className={`${data[0].bg} h-24 flex  items-center justify-center  w-full`}
+        className={`${data[0].bg} h-12 flex  items-center justify-center  w-full`}
       >
-        <h1 className="text-[#015d9c] text-2xl  text-center font-semibold">
+        <h1 className="text-[#015d9c] text-lg  text-center font-semibold">
           {data[0].title}
         </h1>
         <button
@@ -28,17 +28,18 @@ const OneTime = () => {
           aria-expanded={open}
           className="down"
         >
-          <i className="fi fi-rs-angle-circle-down ml-5 text-2xl text-[#015d9c] font-semibold cursor-pointer" />
+          <i className="fi fi-rs-angle-circle-down ml-5 text-lg text-[#015d9c] font-semibold cursor-pointer" />
         </button>
       </div>
       <Collapse in={open} className="h-full">
-        <div className={`${data[0].bg} text-center h-full w-full px-[140px]`}>
+        <div className={`${data[0].bg} text-center h-full w-full px-[10px]`}>
           <div className="flex flex-col  w-full ">
-            <div className="flex items-center font-semibold justify-evenly w-full ">
+            <div className="flex items-center  font-semibold justify-evenly w-full ">
               <button
                 onClick={() => handleButtonClick(0) ? 'using':''}
                 aria-controls="example-collapse-text"
                 aria-expanded={visibleA}
+                className="text-[15px]"
               >
                 {title[0].title}
               </button>
@@ -57,7 +58,7 @@ const OneTime = () => {
                 {title[2].title}
               </button>
             </div>
-            <div className="px-[230px] text-lg flex items-center justify-center  text-left my-5">
+            <div className="px-[2px] text-sm flex items-center justify-center text-justify my-2">
               <Collapse in={visibleA}>
                 <p>{title[0].desc}</p>
               </Collapse>

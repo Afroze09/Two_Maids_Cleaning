@@ -12,17 +12,17 @@ const Rooms = () => {
   };
 const roomDetails = rooms.map(v=>v.details)
   return (
-    <div className="px-[100px] w-full overflow-x-hidden">
+    <div className="px-[2px] w-full ">
       <div className="border-t border-[#9f9f9d]">
         {rooms.map((r) => {
           return (
             <>
               <div
                 key={r.id}
-                className="border-b px-2 h-[65px] flex flex-col justify-center border-[#9f9f9d]"
+                className="border-b h-[45px] flex flex-col justify-center border-[#9f9f9d]"
               >
                 <div className="flex justify-between items-center">
-                  <h1 className="text-[#015d9c] text-2xl text-left font-semibold">
+                  <h1 className="text-[#015d9c] text-[17px] text-left font-semibold">
                     {r.title}
                   </h1>
                   <button
@@ -31,15 +31,15 @@ const roomDetails = rooms.map(v=>v.details)
                     aria-expanded={visibleButtons[r.id]}
                     className="using"
                   >
-                <i className="fi fi-rs-angle-circle-down ml-5 text-2xl text-[#015d9c] font-semibold cursor-pointer" />
+                <i className="fi fi-rs-angle-circle-down  text-[17px] text-[#015d9c] font-semibold cursor-pointer" />
                   </button>
                 </div>
               </div>
               <Collapse in={visibleButtons[r.id]}>
-                <div className="kitchen-data py-5">
+                <div className="kitchen-data  px-2 py-2">
                   
                  
-                        <ul className="list-disc grid gap-3  grid-cols-3">
+                        <ul className="list-disc grid gap-x-8 ml-4 text-xs text-left grid-cols-3">
                           {
                             roomDetails[0].map((item,index) =>{
                               return(
