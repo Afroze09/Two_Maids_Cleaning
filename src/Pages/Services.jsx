@@ -10,19 +10,19 @@ const Services = () => {
     <>
       <div className=" h-full w-full overflow-x-hidden">
         <div
-          className="main-info  h-full w-full md:p-1 p-3  bg-center"
+          className="main-info md:flex h-full w-full md:p-1 p-3  md:bg-cover sm:bg-cover bg-contain lg:bg-cover bg-no-repeat  bg-top lg:bg-center md:bg-center sm:bg-center"
           style={{
             backgroundImage:
             "url(" + img + ")",
            
           }}
         >
-          <div className="sm:ml-4 ml-0 sm:mt-4 mt-[250px]  md:ml-2 lg:ml-16 flex flex-col">
-            <div className="lg:w-[520px] mt-32 md:w-[400px] sm:w-[250px] w-full ">
-            <h1 className="text-3xl lg:text-6xl md:text-5xl tracking-[-0.07em] font-bold text-[#015d9c] font-[TiemposFine] ">Our Services</h1>
+          <div className="sm:ml-4 ml-0 sm:mt-4 mt-[250px]  md:ml-2 lg:ml-4 flex flex-col">
+            <div className="lg:w-[520px]  md:w-[400px] sm:w-[250px] w-full">
+            <h1 className="text-3xl lg:text-6xl xl: md:text-5xl tracking-[-0.07em] font-bold text-[#015d9c] font-[TiemposFine] ">Our Services</h1>
             {serviceinfo.map((info) => {
               return (
-                <p className="text-sm md:text-[15px] lg:text-lg break-words sm:mt-4 text-gray-200">
+                <p className="text-sm md:text-[15px] lg:text-lg break-words sm:mt-4 text-gray-500 sm:text-gray-200">
                   {info}
                 </p>
               );
